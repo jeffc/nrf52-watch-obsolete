@@ -1,0 +1,6 @@
+{
+    "name": "framework-arduinoadafruitnrf52",
+    "description": "Arduino Wiring-based Framework (Nordic nRF52 BLE SoC)",
+    "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino",
+    "version": "1.1405.191023"
+}
