@@ -1,7 +1,9 @@
 #ifdef EMBEDDED
 
 #include <Arduino.h>
-#include <Adafruit_GFX.h>
+#include <graphics.h>
+
+Graphics display();
 
 void setup() {
 }

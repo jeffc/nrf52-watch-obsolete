@@ -1,14 +1,10 @@
 #ifdef NATIVE
 
 #include <iostream>
-#include <Adafruit_GFX_dummy_display.h>
+#include <graphics.h>
 #include "logging.h"
 
-#define DISP_WIDTH 128
-#define DISP_HEIGHT 128
-#define ZOOM 10
-
-Adafruit_GFX_dummy_display display(DISP_WIDTH, DISP_HEIGHT, ZOOM);
+Graphics display;
 
 int main() {
   int running = 1;
