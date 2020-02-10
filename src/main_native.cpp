@@ -16,7 +16,10 @@ int main() {
   display.setTextColor(1);
   display.print("Display Test");
   display.display();
-  LOG_INFO("Test logging");
+  LOG_DEBUG("Debug logging");
+  LOG_INFO("Info %s", "logging");
+  LOG_WARN("Warn logging");
+  LOG_ERROR("Error logging");
   while(running)
   {
     SDL_Event event;
