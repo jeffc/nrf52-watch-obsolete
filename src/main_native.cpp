@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <Adafruit_GFX_dummy_display.h>
+#include "logging.h"
 
 #define DISP_WIDTH 128
 #define DISP_HEIGHT 128
@@ -15,6 +16,7 @@ int main() {
   display.setTextColor(1);
   display.print("Display Test");
   display.display();
+  LOG_INFO("Test logging");
   while(running)
   {
     SDL_Event event;
