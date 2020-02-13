@@ -1,0 +1,3 @@
+[submodule "kicad/libs/nrfmicro"]
+	path = kicad/libs/nrfmicro
+	url = https://github.com/joric/nrfmicro.git

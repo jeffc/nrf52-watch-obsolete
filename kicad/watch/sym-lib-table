@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name nrfmicro)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/libs/nrfmicro/hardware/nrfmicro.lib)(options "")(descr ""))
+  (lib (name TEXAS_INSTRUMENTS_TPS630242YFFT)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/libs/TEXAS_INSTRUMENTS_TPS630242YFFT.lib)(options "")(descr ""))
+)

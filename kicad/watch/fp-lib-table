@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name nrfmicro)(type KiCad)(uri /home/jeff/code/nrf52-watch/kicad/libs/nrfmicro/hardware/nrfmicro.pretty)(options "")(descr ""))
+)
