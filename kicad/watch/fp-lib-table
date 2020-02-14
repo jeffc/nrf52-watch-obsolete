@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name nrfmicro)(type KiCad)(uri /home/jeff/code/nrf52-watch/kicad/libs/nrfmicro/hardware/nrfmicro.pretty)(options "")(descr ""))
+  (lib (name 113990582)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/libs/113990582.mod)(options "")(descr ""))
+  (lib (name libs)(type KiCad)(uri /home/jeff/code/nrf52-watch/kicad/libs)(options "")(descr ""))
 )
