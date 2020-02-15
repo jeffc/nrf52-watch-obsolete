@@ -9,9 +9,9 @@
 
 #ifdef EMBEDDED
 
-#define PIN_DISPLAY_CLK 0
-#define PIN_DISPLAY_MOSI 0
-#define PIN_DISPLAY_SS 0
+#define PIN_DISPLAY_CLK 2
+#define PIN_DISPLAY_MOSI 3
+#define PIN_DISPLAY_SS 31
 
 #endif
 #endif
