@@ -46,6 +46,7 @@ building a smartwatch based on the nrf52840 microcontroller from Nordic.
     * [Adafruit](https://github.com/adafruit/Adafruit-GFX-Library)
     * [vhervieux on github](https://github.com/croutor/Adafruit_GFX_dummy_display)
     * [jeraymond on github](https://github.com/jeraymond/pio-sparkfun_pro_nrf52840_mini-setup)
+    * [UF2Conv from Microsoft](https://raw.githubusercontent.com/microsoft/uf2/master/utils/uf2conv.py)
   * This project took inspiration from these projects:
     * [Chronio](https://hackaday.io/project/12876-chronio)
     * [Samson March's Smartwatch](https://imgur.com/a/FSBwD3g)

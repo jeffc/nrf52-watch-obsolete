@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 113990582
+D Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module
+K
+F http://www.raytac.com/download/index.php?index_id=24
+$ENDCMP
+#
+#End Doc Library

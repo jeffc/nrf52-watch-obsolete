@@ -70,6 +70,8 @@ void setup() {
 }
 
 void loop() {
+  Serial.println("hi");
+  delay(200);
 }
 
 #endif
