@@ -199,7 +199,7 @@ U 1 1 5E43AA64
 P 4450 1450
 F 0 "BT1" H 4568 1546 50  0000 L CNN
 F 1 "Battery_Cell" H 4568 1455 50  0000 L CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical" V 4450 1510 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" V 4450 1510 50  0001 C CNN
 F 3 "~" V 4450 1510 50  0001 C CNN
 	1    4450 1450
 	1    0    0    -1  
@@ -577,11 +577,11 @@ F 3 "~" H 10600 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q1
+L Device:Q_NMOS_GSD Q1
 U 1 1 5E4FBBEA
 P 10300 5850
 F 0 "Q1" H 10505 5896 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 10505 5805 50  0000 L CNN
+F 1 "DMN6140L" H 10505 5805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10500 5950 50  0001 C CNN
 F 3 "~" H 10300 5850 50  0001 C CNN
 	1    10300 5850
@@ -668,15 +668,13 @@ Text GLabel 1000 5000 0    50   Input ~ 0
 LCD_MOSI
 Text GLabel 1000 5100 0    50   Input ~ 0
 LCD_CS
-Text GLabel 1000 5200 0    50   Input ~ 0
-EXTCOMIN
 $Comp
 L Connector:Conn_01x04_Female J2
 U 1 1 5E55A79C
 P 1300 3650
 F 0 "J2" H 1327 3626 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 1327 3535 50  0000 L CNN
-F 2 "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal" H 1300 3650 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 1300 3650 50  0001 C CNN
 F 3 "~" H 1300 3650 50  0001 C CNN
 	1    1300 3650
 	1    0    0    -1  
@@ -712,7 +710,7 @@ U 1 1 5E573B85
 P 2700 3650
 F 0 "J3" H 2727 3626 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 2727 3535 50  0000 L CNN
-F 2 "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal" H 2700 3650 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 2700 3650 50  0001 C CNN
 F 3 "~" H 2700 3650 50  0001 C CNN
 	1    2700 3650
 	1    0    0    -1  
@@ -748,13 +746,13 @@ Text GLabel 1000 5700 0    50   Input ~ 0
 BTN1
 Text GLabel 1000 5600 0    50   Input ~ 0
 BTN2
-Text GLabel 1000 5500 0    50   Input ~ 0
+Text GLabel 1000 5400 0    50   Input ~ 0
 BTN3
-Text GLabel 2950 5800 2    50   Input ~ 0
+Text GLabel 1050 7400 0    50   Input ~ 0
 BTN4
-Text GLabel 2950 5900 2    50   Input ~ 0
+Text GLabel 1050 7200 0    50   Input ~ 0
 BTN5
-Text GLabel 2950 6000 2    50   Input ~ 0
+Text GLabel 1050 7100 0    50   Input ~ 0
 BTN6
 $Comp
 L Switch:SW_Push SW1
@@ -930,7 +928,7 @@ U 1 1 5E70590D
 P 3650 3650
 F 0 "TP1" H 3592 3677 50  0000 R CNN
 F 1 "TestPoint" H 3592 3768 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3850 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3850 3650 50  0001 C CNN
 F 3 "~" H 3850 3650 50  0001 C CNN
 	1    3650 3650
 	-1   0    0    1   
@@ -943,7 +941,7 @@ U 1 1 5E70CD90
 P 3650 4050
 F 0 "TP2" H 3708 4170 50  0000 L CNN
 F 1 "TestPoint" H 3708 4079 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3850 4050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3850 4050 50  0001 C CNN
 F 3 "~" H 3850 4050 50  0001 C CNN
 	1    3650 4050
 	1    0    0    -1  
@@ -956,7 +954,7 @@ U 1 1 5E713C95
 P 4700 3550
 F 0 "TP3" V 4654 3738 50  0000 L CNN
 F 1 "TestPoint" V 4745 3738 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4900 3550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4900 3550 50  0001 C CNN
 F 3 "~" H 4900 3550 50  0001 C CNN
 	1    4700 3550
 	0    1    1    0   
@@ -969,7 +967,7 @@ U 1 1 5E71AD28
 P 4700 4000
 F 0 "TP4" V 4654 4188 50  0000 L CNN
 F 1 "TestPoint" V 4745 4188 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4900 4000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4900 4000 50  0001 C CNN
 F 3 "~" H 4900 4000 50  0001 C CNN
 	1    4700 4000
 	0    1    1    0   
@@ -1086,8 +1084,6 @@ Wire Wire Line
 	1100 5000 1000 5000
 Wire Wire Line
 	1100 5100 1000 5100
-Wire Wire Line
-	1100 5200 1000 5200
 Text GLabel 10000 4200 0    50   Input ~ 0
 EXTMODE
 Wire Wire Line
@@ -1100,8 +1096,6 @@ Text GLabel 3000 5400 2    50   Input ~ 0
 RST
 Wire Wire Line
 	3000 5400 2800 5400
-Wire Wire Line
-	1000 5500 1100 5500
 Wire Wire Line
 	1100 5600 1000 5600
 Wire Wire Line
@@ -1160,11 +1154,11 @@ F 3 "~" H 9550 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q2
+L Device:Q_NMOS_GSD Q2
 U 1 1 5E978039
 P 9250 5850
 F 0 "Q2" H 9455 5896 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 9455 5805 50  0000 L CNN
+F 1 "DMN6140L" H 9455 5805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9450 5950 50  0001 C CNN
 F 3 "~" H 9250 5850 50  0001 C CNN
 	1    9250 5850
@@ -1247,20 +1241,8 @@ F 3 "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plu
 	1    6750 5700
 	1    0    0    -1  
 $EndComp
-Text GLabel 6000 5700 0    50   Input ~ 0
-FLASH_CS
-Text GLabel 6000 5600 0    50   Input ~ 0
-FLASH_CLK
 Text GLabel 7450 5500 2    50   Input ~ 0
 FLASH_DO
-Wire Wire Line
-	6000 5700 6150 5700
-Wire Wire Line
-	6150 5600 6000 5600
-Text GLabel 6000 5500 0    50   Input ~ 0
-FLASH_DI
-Wire Wire Line
-	6000 5500 6150 5500
 Wire Wire Line
 	7350 5500 7450 5500
 $Comp
@@ -1309,11 +1291,11 @@ Wire Wire Line
 Connection ~ 6050 5900
 Wire Wire Line
 	6050 5900 6150 5900
-Text GLabel 2950 6100 2    50   Input ~ 0
+Text GLabel 2950 6300 2    50   Input ~ 0
 FLASH_CS
 Text GLabel 2950 6200 2    50   Input ~ 0
 FLASH_CLK
-Text GLabel 2950 6300 2    50   Input ~ 0
+Text GLabel 2950 6100 2    50   Input ~ 0
 FLASH_DI
 Wire Wire Line
 	2950 6100 2800 6100
@@ -1342,16 +1324,12 @@ Text GLabel 2950 7000 2    50   Input ~ 0
 BUZZER
 Wire Wire Line
 	2950 7000 2800 7000
-NoConn ~ 1100 5400
 NoConn ~ 1100 5800
 NoConn ~ 1100 5900
 NoConn ~ 1100 6100
 NoConn ~ 1100 6400
 NoConn ~ 1100 6500
 NoConn ~ 1100 7000
-NoConn ~ 1100 7100
-NoConn ~ 1100 7200
-NoConn ~ 1100 7400
 NoConn ~ 2800 7500
 NoConn ~ 2800 7400
 NoConn ~ 2800 7100
@@ -1428,35 +1406,16 @@ $EndComp
 Wire Wire Line
 	6950 4550 6950 4450
 NoConn ~ 7050 4450
-Text GLabel 7450 4150 2    50   Input ~ 0
+Text GLabel 7500 4600 0    50   Input ~ 0
 SQW
 Wire Wire Line
 	7450 4150 7350 4150
-Text GLabel 7450 4050 2    50   Input ~ 0
+Text GLabel 7500 4700 0    50   Input ~ 0
 RTC_IRQ
 Wire Wire Line
 	7450 4050 7350 4050
 NoConn ~ 2800 7300
 NoConn ~ 2800 7200
-$Comp
-L MDBT50Q:113990582 IC1
-U 1 1 5E755499
-P 1100 4600
-F 0 "IC1" H 1950 4865 50  0000 C CNN
-F 1 "113990582" H 1950 4774 50  0000 C CNN
-F 2 "113990582:113990582" H 2650 4700 50  0001 L CNN
-F 3 "http://www.raytac.com/download/index.php?index_id=24" H 2650 4600 50  0001 L CNN
-F 4 "Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module" H 2650 4500 50  0001 L CNN "Description"
-F 5 "2" H 2650 4400 50  0001 L CNN "Height"
-F 6 "Seeed Studio" H 2650 4300 50  0001 L CNN "Manufacturer_Name"
-F 7 "113990582" H 2650 4200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "713-113990582" H 2650 4100 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=713-113990582" H 2650 4000 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 2650 3900 50  0001 L CNN "RS Part Number"
-F 11 "" H 2650 3800 50  0001 L CNN "RS Price/Stock"
-	1    1100 4600
-	1    0    0    -1  
-$EndComp
 Text GLabel 1000 6900 0    50   Input ~ 0
 SQW
 Wire Wire Line
@@ -1478,4 +1437,184 @@ Wire Wire Line
 	5400 1650 6250 1650
 Wire Wire Line
 	6450 1350 6550 1350
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EC78F7F
+P 8050 6100
+F 0 "TP9" V 8004 6288 50  0000 L CNN
+F 1 "TestPoint" V 8095 6288 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8250 6100 50  0001 C CNN
+F 3 "~" H 8250 6100 50  0001 C CNN
+	1    8050 6100
+	0    1    1    0   
+$EndComp
+Text GLabel 7850 6300 0    50   Input ~ 0
+FLASH_CS
+Text GLabel 7850 6200 0    50   Input ~ 0
+FLASH_CLK
+Text GLabel 7850 6100 0    50   Input ~ 0
+FLASH_DI
+Wire Wire Line
+	7850 6100 8050 6100
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5EC96AE2
+P 8050 6200
+F 0 "TP10" V 8004 6388 50  0000 L CNN
+F 1 "TestPoint" V 8095 6388 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8250 6200 50  0001 C CNN
+F 3 "~" H 8250 6200 50  0001 C CNN
+	1    8050 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5ECA09E6
+P 8050 6300
+F 0 "TP11" V 8004 6488 50  0000 L CNN
+F 1 "TestPoint" V 8095 6488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8250 6300 50  0001 C CNN
+F 3 "~" H 8250 6300 50  0001 C CNN
+	1    8050 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 6200 8050 6200
+Wire Wire Line
+	7850 6300 8050 6300
+Text GLabel 7850 6400 0    50   Input ~ 0
+FLASH_DO
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5ECB4CB4
+P 8050 6400
+F 0 "TP12" V 8004 6588 50  0000 L CNN
+F 1 "TestPoint" V 8095 6588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8250 6400 50  0001 C CNN
+F 3 "~" H 8250 6400 50  0001 C CNN
+	1    8050 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 6400 7850 6400
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5ECC4057
+P 7650 4400
+F 0 "TP5" V 7604 4588 50  0000 L CNN
+F 1 "TestPoint" V 7695 4588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5ECC405D
+P 7650 4500
+F 0 "TP6" V 7604 4688 50  0000 L CNN
+F 1 "TestPoint" V 7695 4688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 4500 50  0001 C CNN
+F 3 "~" H 7850 4500 50  0001 C CNN
+	1    7650 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5ECC4063
+P 7650 4600
+F 0 "TP7" V 7604 4788 50  0000 L CNN
+F 1 "TestPoint" V 7695 4788 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 4600 50  0001 C CNN
+F 3 "~" H 7850 4600 50  0001 C CNN
+	1    7650 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5ECC4069
+P 7650 4700
+F 0 "TP8" V 7604 4888 50  0000 L CNN
+F 1 "TestPoint" V 7695 4888 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 4700 50  0001 C CNN
+F 3 "~" H 7850 4700 50  0001 C CNN
+	1    7650 4700
+	0    1    1    0   
+$EndComp
+Text GLabel 7500 4400 0    50   Input ~ 0
+SCL
+Text GLabel 7500 4500 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	7500 4600 7650 4600
+Wire Wire Line
+	7500 4500 7650 4500
+Wire Wire Line
+	7500 4400 7650 4400
+Wire Wire Line
+	7650 4700 7500 4700
+Text GLabel 8000 2000 0    50   Input ~ 0
+VIN
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5ED26D0C
+P 8100 2000
+F 0 "TP13" V 8054 2188 50  0000 L CNN
+F 1 "TestPoint" V 8145 2188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8300 2000 50  0001 C CNN
+F 3 "~" H 8300 2000 50  0001 C CNN
+	1    8100 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2000 8000 2000
+Text GLabel 6050 5700 0    50   Input ~ 0
+FLASH_CS
+Text GLabel 6050 5600 0    50   Input ~ 0
+FLASH_CLK
+Text GLabel 6050 5500 0    50   Input ~ 0
+FLASH_DI
+Wire Wire Line
+	6050 5500 6150 5500
+Wire Wire Line
+	6150 5600 6050 5600
+Wire Wire Line
+	6050 5700 6150 5700
+Text GLabel 7450 4150 2    50   Input ~ 0
+SQW
+Text GLabel 7450 4050 2    50   Input ~ 0
+RTC_IRQ
+NoConn ~ 1100 5200
+Wire Wire Line
+	1000 5400 1100 5400
+NoConn ~ 1100 5500
+$Comp
+L MDBT50Q:113990582 IC1
+U 1 1 5E755499
+P 1100 4600
+F 0 "IC1" H 1950 4865 50  0000 C CNN
+F 1 "113990582" H 1950 4774 50  0000 C CNN
+F 2 "113990582:113990582" H 2650 4700 50  0001 L CNN
+F 3 "http://www.raytac.com/download/index.php?index_id=24" H 2650 4600 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module" H 2650 4500 50  0001 L CNN "Description"
+F 5 "2" H 2650 4400 50  0001 L CNN "Height"
+F 6 "Seeed Studio" H 2650 4300 50  0001 L CNN "Manufacturer_Name"
+F 7 "113990582" H 2650 4200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "713-113990582" H 2650 4100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=713-113990582" H 2650 4000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 2650 3900 50  0001 L CNN "RS Part Number"
+F 11 "" H 2650 3800 50  0001 L CNN "RS Price/Stock"
+	1    1100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 7400 1100 7400
+Wire Wire Line
+	1100 7200 1050 7200
+Wire Wire Line
+	1100 7100 1050 7100
+NoConn ~ 2950 5800
+NoConn ~ 2950 5900
+NoConn ~ 2950 6000
+NoConn ~ 2800 4300
 $EndSCHEMATC
