@@ -7,24 +7,50 @@ building a smartwatch based on the nrf52840 microcontroller from Nordic.
 
 ## Parts
 
-  * [MS88SF2 nRF52840 Module](https://en.minewtech.com/bluetooth-module/MS88SF2.html)
+  * [RayTac MDBT50Q nRF52840 Module](https://www.raytac.com/product/ins.php?index_id=24)
     * Main brains. nRF52840 chipset chosen for BLE capability and low (&lt;1uA)
       sleep current.
-    * Chosen for ease of solderability; other modules have pads that aren't
-      accessible from the sides of the module.
-  * [Sharp LS013B7DH03 1.28" Memory LCD](https://www.sharpsma.com/products?sharpCategory=Memory%20LCD&p_p_parallel=0&sharpProductRecordId=1504572)
+    * This is the module used in the [Sparkfun Breakout](https://www.sparkfun.com/products/15025)
+  * [Sharp LS018B7DH02 1.8" Memory LCD with FLExLight Frontlight](https://www.digikey.com/product-detail/en/flex-lighting/12616-06_T1/12616-06_T1-ND/9602610)
     * Always-on display.
     * Chosen for size and small power consumption.
-  * [DS1302 RTC](https://datasheets.maximintegrated.com/en/ds/DS1302.pdf)
+    * The LS018B7DH02 isn't sold directly by Sharp, and no datasheet is
+      currently available.
+    * Unknowns are currently
+      * Does the display require 3.3V or 5V power?
+      * Does the display require 3.3V or 5V logic?
+      * Does the display require a 1Hz or 60Hz square wave for biasing? 3.3V
+        models tend to need 60Hz, but the 5V models need 1Hz
+  * [M41T62Q6F RTC](https://www.digikey.com/product-detail/en/stmicroelectronics/M41T62Q6F/497-3907-1-ND/714738)
     * Realtime clock, for real timekeeping.
-    * Chosen for small power consumption and library support.
+    * Chosen for small power consumption and footprint
+    * This module can also provide the 1Hz or 64Hz square wave required by the
+      memory LCD, which means fewer wakeups for the nRF52840
+  * [MCP73831T Battery Charger IC](https://www.digikey.com/product-detail/en/microchip-technology/MCP73831T-2DCI-OT/MCP73831T-2DCI-OTCT-ND/1979804) 
+    * Charges at 4.2V
+  * USB-C port for power, charging, and data
+    * I'm cheating here and using USB 2.0 Compatibility mode, so I don't get the
+      benefits of USB-PD.
 
 ## Power
 
-  * Project is planned to be powered by a [CR3032 coin cell](https://www.digikey.com/product-detail/en/panasonic-bsg/CR3032/P121-ND/107126),
-    which has a nominal capacity of 500mAh at 3V.
+  * Project will be powered by a [500mAh LiPo](https://www.adafruit.com/product/1578),
+    which has a nominal capacity of 500mAh at 3.7V.
+    * Battery chosen has built-in overcurrent and undervoltage protection
+      circuitry, meaning that I don't have to design any.
   * Projected lifetime is &gt;2mo, though it remains to be seen if this is
     possible
+
+## Manufacture and Assembly
+
+  * Prototypes of the case and mechanical components will be 3D printed.
+  * Once I have a design that I like, I'll send the files to
+    [Shapeways](http://shapeways.com) or [ExOne](http://exone.com) to be 3D
+    Printed in steel.
+  * Side buttons (required since the display is not a touch screen) will be on
+    separate PCBs, connected via JST-SH cables to the main PCB. This allows me
+    to use normal PCB buttons rather than right-angle ones, and gives some
+    flexibility in mounting the main PCB.
 
 ## Software
 
@@ -32,7 +58,6 @@ building a smartwatch based on the nrf52840 microcontroller from Nordic.
   ideas and framework setup.
 
   * To conserve power, everything will be interrupts-driven. 
-    * This includes a 60Hz toggle for the memory LCD's EXTCOMIN pin
   * PlatformIO doesn't have a builtin for the sparkfun dev board I'm using, so
     the packages/ directory and corresponding lines in platformio.ini are a
     workaround to keep the repository as portable as possible
