@@ -26,7 +26,7 @@
  */
 #include <Adafruit_GFX_dummy_display.h>
 
-Adafruit_GFX_dummy_display::Adafruit_GFX_dummy_display(uint8_t w, uint8_t h, uint8_t zoom) :
+Adafruit_GFX_dummy_display::Adafruit_GFX_dummy_display(uint16_t w, uint16_t h, uint16_t zoom) :
 Adafruit_GFX(w, h),
 window_(NULL),
 renderer_(NULL),
@@ -126,7 +126,7 @@ void Adafruit_GFX_dummy_display::fillScreen(uint16_t color)
    setColor(color);
 }
 
-void Adafruit_GFX_dummy_display::initWindowAndRendered(uint8_t w, uint8_t h)
+void Adafruit_GFX_dummy_display::initWindowAndRendered(uint16_t w, uint16_t h)
 {
    /* Init window and, création de la fenêtre et du renderer. */
    if(0 != SDL_Init(SDL_INIT_VIDEO))
