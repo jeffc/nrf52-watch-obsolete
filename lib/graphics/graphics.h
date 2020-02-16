@@ -5,8 +5,8 @@
 #ifndef _GRAPHICS_H_
 #define _GRAPHICS_H_
 
-#define SCREEN_WIDTH  128
-#define SCREEN_HEIGHT 128
+#define SCREEN_WIDTH  230
+#define SCREEN_HEIGHT 303
 
 #ifdef NATIVE
 #include <Adafruit_GFX_dummy_display.h>
