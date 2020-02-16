@@ -14,6 +14,7 @@ class DateTime {
     int day;
     int month;
     int year;
+    int dow; // 0 = sunday, to match ctime
 };
 
 class RTC {

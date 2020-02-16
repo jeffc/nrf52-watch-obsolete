@@ -19,6 +19,7 @@ DateTime RTC::getTime() {
   dt.day = tt.tm_mday;
   dt.month = tt.tm_mon;
   dt.year = tt.tm_year;
+  dt.dow = tt.tm_wday;
 
   return dt;
 }
