@@ -2,6 +2,7 @@
 
 #include <Arduino.h>
 #include <graphics.h>
+#include <rtc.h>
 #include <Fonts/FreeMonoBold9pt7b.h>
 
 #include <nrf.h>
