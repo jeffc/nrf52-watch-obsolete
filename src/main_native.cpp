@@ -41,6 +41,7 @@ int main() {
           break;
       }
     }
+    display.display();
   }
   return 0;
 }
