@@ -163,7 +163,6 @@ F 3 "" H 2950 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 2050 2950 1950
-Connection ~ 2950 1950
 Wire Wire Line
 	2950 1950 2650 1950
 $Comp
@@ -1792,4 +1791,5 @@ F 3 "" H 1450 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 4000 1400 4000
+Connection ~ 2950 1950
 $EndSCHEMATC
