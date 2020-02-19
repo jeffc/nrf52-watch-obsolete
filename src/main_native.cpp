@@ -41,9 +41,19 @@ int main() {
   display.setFont(&Seven_Segment36pt7b);
   display.setCursor(0, 60);
   //display.print(buf);
-  for (int i = 0; i < 10; i++) {
-    printnum(20 + 40*i, 40, i, 4);
-  }
+
+  int h1 = t.hours / 10;
+  int h2 = t.hours % 10;
+
+  int m1 = t.minutes / 10;
+  int m2 = t.minutes % 10;
+
+  printnum(20, 20, h1, 4);
+  printnum(20+40, 20, h2, 4);
+  printnum(20+80, 20, m1, 4);
+  printnum(20+120, 20, m2, 4);
+
+
   display.display();
   LOG_DEBUG("Debug logging");
   LOG_INFO("Info %s", "logging");
