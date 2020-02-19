@@ -12,16 +12,20 @@
 Graphics display;
 RTC rtc;
 
-void printnum(int x_, int y_, int n) {
+void printnum(int x_, int y_, int n, int scale=1) {
   const uint8_t* ch = BIGNUM[n];
 
   for (int y=0; y<8; y++) {
-    uint8_t b = ch[y];
-    for (int x=0; x<8; x++) {
-      printf("%1d", b&1);
-      display.drawPixel(x_+x, y_+y, !!(b&0x80));
-      b <<= 1;
-    }
+      uint8_t b = ch[y];
+      for (int x=0; x<8; x++) {
+        printf("%1d", b&1);
+        for (int yy=scale*y; yy < scale*(y+1); yy++) {
+          for (int xx=scale*x; xx < scale*(x+1); xx++) {
+            display.drawPixel(x_+xx, y_+yy, !!(b&0x80));
+          }
+        }
+        b <<= 1;
+      }
     printf("\n");
   }
   printf("\n");
@@ -38,7 +42,7 @@ int main() {
   display.setCursor(0, 60);
   //display.print(buf);
   for (int i = 0; i < 10; i++) {
-    printnum(20 + 10*i, 40, i);
+    printnum(20 + 40*i, 40, i, 4);
   }
   display.display();
   LOG_DEBUG("Debug logging");
