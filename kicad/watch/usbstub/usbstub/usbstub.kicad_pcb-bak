@@ -260,10 +260,10 @@
       (net 1 GND))
     (pad MP smd roundrect (at -2.8 -1.875 270) (size 1.2 1.8) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.208333))
     (pad MP smd roundrect (at 2.8 -1.875 270) (size 1.2 1.8) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.208333))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model /home/jeff/code/nrf52-watch/kicad/libs/jst.step
+      (offset (xyz 0 1 -0.25))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 

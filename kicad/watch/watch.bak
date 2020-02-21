@@ -15,111 +15,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 5E43554D
-P 950 1550
-F 0 "J1" H 1055 2417 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1055 2326 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 1100 1550 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1100 1550 50  0001 C CNN
-	1    950  1550
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1550 2050
-NoConn ~ 1550 2150
-$Comp
 L power:VBUS #PWR0105
 U 1 1 5E4357E3
-P 1800 750
-F 0 "#PWR0105" H 1800 600 50  0001 C CNN
-F 1 "VBUS" H 1815 923 50  0000 C CNN
-F 2 "" H 1800 750 50  0001 C CNN
-F 3 "" H 1800 750 50  0001 C CNN
-	1    1800 750 
+P 1400 1400
+F 0 "#PWR0105" H 1400 1250 50  0001 C CNN
+F 1 "VBUS" H 1415 1573 50  0000 C CNN
+F 2 "" H 1400 1400 50  0001 C CNN
+F 3 "" H 1400 1400 50  0001 C CNN
+	1    1400 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 750  1800 950 
-Wire Wire Line
-	1800 950  1550 950 
-$Comp
-L Device:R R2
-U 1 1 5E43586A
-P 1850 1250
-F 0 "R2" V 1900 1100 50  0000 C CNN
-F 1 "5.1k" V 1850 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 1250 50  0001 C CNN
-F 3 "~" H 1850 1250 50  0001 C CNN
-	1    1850 1250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 1250 1700 1250
-$Comp
-L Device:R R1
-U 1 1 5E43595E
-P 1850 1150
-F 0 "R1" V 1800 1000 50  0000 C CNN
-F 1 "5.1k" V 1850 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1780 1150 50  0001 C CNN
-F 3 "~" H 1850 1150 50  0001 C CNN
-	1    1850 1150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1550 1150 1700 1150
-$Comp
-L power:GND #PWR0106
-U 1 1 5E435A38
-P 2200 1350
-F 0 "#PWR0106" H 2200 1100 50  0001 C CNN
-F 1 "GND" H 2205 1177 50  0000 C CNN
-F 2 "" H 2200 1350 50  0001 C CNN
-F 3 "" H 2200 1350 50  0001 C CNN
-	1    2200 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1350 2200 1250
-Wire Wire Line
-	2200 1150 2000 1150
-Wire Wire Line
-	2000 1250 2200 1250
-Connection ~ 2200 1250
-Wire Wire Line
-	2200 1250 2200 1150
-Wire Wire Line
-	1550 1450 1650 1450
-Wire Wire Line
-	1550 1550 1650 1550
-Wire Wire Line
-	1650 1550 1650 1450
-Wire Wire Line
-	1550 1750 1650 1750
-Wire Wire Line
-	1550 1650 1650 1650
-Wire Wire Line
-	1650 1650 1650 1750
-$Comp
-L power:GND #PWR0107
-U 1 1 5E43601B
-P 950 2650
-F 0 "#PWR0107" H 950 2400 50  0001 C CNN
-F 1 "GND" H 955 2477 50  0000 C CNN
-F 2 "" H 950 2650 50  0001 C CNN
-F 3 "" H 950 2650 50  0001 C CNN
-	1    950  2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  2650 950  2550
-Wire Wire Line
-	650  2450 650  2550
-Wire Wire Line
-	650  2550 950  2550
-Connection ~ 950  2550
-Wire Wire Line
-	950  2550 950  2450
 $Comp
 L Battery_Management:MCP73831-2-OT U2
 U 1 1 5E437B22
@@ -343,8 +248,6 @@ F 3 "" H 7250 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 2050 7250 1900
-Text Notes 1200 2400 0    50   ~ 0
-USB-C Port (legacy USB mode)
 Text Notes 3350 1800 0    50   ~ 0
 Battery charger IC
 Text Notes 4600 1600 0    50   ~ 0
@@ -361,16 +264,10 @@ Text GLabel 3300 4900 2    50   Input ~ 0
 USB_DP
 Text GLabel 3300 4800 2    50   Input ~ 0
 USB_DN
-Text GLabel 1750 1750 2    50   Input ~ 0
+Text GLabel 1400 1700 2    50   Input ~ 0
 USB_DP
-Wire Wire Line
-	1750 1750 1650 1750
-Connection ~ 1650 1750
-Text GLabel 1750 1550 2    50   Input ~ 0
+Text GLabel 1400 1600 2    50   Input ~ 0
 USB_DN
-Wire Wire Line
-	1750 1550 1650 1550
-Connection ~ 1650 1550
 Text GLabel 6700 1000 2    50   Input ~ 0
 VIN
 Wire Wire Line
@@ -1713,17 +1610,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 4650 5300 4650
 Connection ~ 5300 4650
-$Comp
-L power:+3V3 #PWR0145
-U 1 1 5EE942BD
-P 2450 3150
-F 0 "#PWR0145" H 2450 3000 50  0001 C CNN
-F 1 "+3V3" V 2465 3278 50  0000 L CNN
-F 2 "" H 2450 3150 50  0001 C CNN
-F 3 "" H 2450 3150 50  0001 C CNN
-	1    2450 3150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1000 3850 1100 3850
 Wire Wire Line
@@ -1792,4 +1678,38 @@ F 3 "" H 1450 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 4000 1400 4000
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5E541D8B
+P 1100 1700
+F 0 "J?" H 1127 1676 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 1127 1585 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 1100 1700 50  0001 C CNN
+F 3 "~" H 1100 1700 50  0001 C CNN
+	1    1100 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1400 1400 1500
+Wire Wire Line
+	1400 1500 1300 1500
+Wire Wire Line
+	1400 1600 1300 1600
+Wire Wire Line
+	1400 1700 1300 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5E5661C7
+P 1400 1850
+F 0 "#PWR?" H 1400 1600 50  0001 C CNN
+F 1 "GND" H 1405 1677 50  0000 C CNN
+F 2 "" H 1400 1850 50  0001 C CNN
+F 3 "" H 1400 1850 50  0001 C CNN
+	1    1400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1850 1400 1800
+Wire Wire Line
+	1400 1800 1300 1800
 $EndSCHEMATC
