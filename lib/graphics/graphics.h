@@ -5,7 +5,7 @@
 #ifndef _GRAPHICS_H_
 #define _GRAPHICS_H_
 
-#define SCREEN_WIDTH  230
+#define SCREEN_WIDTH  240
 #define SCREEN_HEIGHT 303
 
 #ifdef NATIVE

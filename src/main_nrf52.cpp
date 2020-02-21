@@ -13,10 +13,10 @@
 #define PIN_EXTCOMIN 30
 
 
-#define NRF52_ONRAM1_OFFRAM0    POWER_RAM_POWER_S0POWER_Off      << POWER_RAM_POWER_S0POWER_Pos      \
-  | POWER_RAM_POWER_S1POWER_Off      << POWER_RAM_POWER_S1POWER_Pos      \
-  | POWER_RAM_POWER_S0RETENTION_Off << POWER_RAM_POWER_S0RETENTION_Pos  \
-  | POWER_RAM_POWER_S1RETENTION_Off << POWER_RAM_POWER_S1RETENTION_Pos;
+//#define NRF52_ONRAM1_OFFRAM0    POWER_RAM_POWER_S0POWER_Off      << POWER_RAM_POWER_S0POWER_Pos      \
+//  | POWER_RAM_POWER_S1POWER_Off      << POWER_RAM_POWER_S1POWER_Pos      \
+//  | POWER_RAM_POWER_S0RETENTION_Off << POWER_RAM_POWER_S0RETENTION_Pos  \
+//  | POWER_RAM_POWER_S1RETENTION_Off << POWER_RAM_POWER_S1RETENTION_Pos;
 
 Graphics display;
 
@@ -39,19 +39,21 @@ void redraw(void* unused) {
   display.setCursor(20, 20);
   display.setTextColor(0);
   display.print(x);
+  display.setTextColor(1);
+  display.print(x);
   display.refresh();
 }
 
 
 void setup() {
-  nrf_comp_disable();
-  nrf_lpcomp_disable();
-  NRF_TWI0->ENABLE = 0;
-  NRF_TWI1->ENABLE = 0;
-  NRF_SPI0->ENABLE = 0;
-  NRF_SPI1->ENABLE = 0;
+  //nrf_comp_disable();
+  //nrf_lpcomp_disable();
+  //NRF_TWI0->ENABLE = 0;
+  //NRF_TWI1->ENABLE = 0;
+  //NRF_SPI0->ENABLE = 0;
+  //NRF_SPI1->ENABLE = 0;
 
-  NRF_POWER->DCDCEN = 1;
+  //NRF_POWER->DCDCEN = 1;
 
   //NRF_POWER->SYSTEMOFF = 1;
 
@@ -59,14 +61,24 @@ void setup() {
   display.begin();
   display.setFont(&FreeMonoBold9pt7b);
   display.clearDisplay();
-  display.refresh();
-  //t.begin(16, extcomin);
+  //display.refresh();
+  //t.begin(1000, extcomin);
   //t.start();
-  t.begin(500, incx);
-  t.start();
+  //t.begin(500, incx);
+  //t.start();
   //t2.begin(2000, redraw);
   //t2.start();
-  //x = 0;
+
+  x = 0;
+
+  for (int a = 0; a < SCREEN_WIDTH; a++) {
+    for (int b = 0; b < SCREEN_HEIGHT; b++) {
+      display.drawPixel(a, b, 0);
+      delay(1000);
+      //display.refresh();
+      display.clearDisplay();
+    }
+  }
   suspendLoop();
 }
 
