@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# M41T62LC6F
+#
+DEF M41T62LC6F IC 0 40 Y Y 1 L N
+F0 "IC" -401 601 50 H V L BNN
+F1 "M41T62LC6F" -400 -601 50 H V L BNN
+F2 "LCC90P230X50X80-8N" 0 0 50 H I L BNN
+F3 "STMicroelectronics" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 400 500 400 -400 N
+P 2 0 0 10 400 -400 -400 -400 N
+P 2 0 0 10 -400 -400 -400 500 N
+P 2 0 0 10 -400 500 -100 500 N
+P 2 0 0 10 100 500 400 500 N
+A 0 500 100 1799 3600 0 0 10 N 100 500 -100 500
+X SCL 8 -600 200 200 R 40 40 0 0 I C
+X SQW 2 -600 100 200 R 40 40 0 0 I 
+X ~IRQ/OUT~ 6 600 0 200 L 40 40 0 0 O I
+X SDA 1 -600 -100 200 R 40 40 0 0 B 
+X VCC 5 600 400 200 L 40 40 0 0 W 
+X VSS 3 600 -300 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

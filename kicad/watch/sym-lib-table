@@ -3,4 +3,5 @@
   (lib (name TEXAS_INSTRUMENTS_TPS630242YFFT)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/libs/TEXAS_INSTRUMENTS_TPS630242YFFT.lib)(options "")(descr ""))
   (lib (name MDBT50Q)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/libs/113990582.lib)(options "")(descr ""))
   (lib (name custom)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/watch/custom.lib)(options "")(descr ""))
+  (lib (name M41T62LC6F)(type Legacy)(uri /home/jeff/code/nrf52-watch/kicad/libs/M41T62LC6F.lib)(options "")(descr ""))
 )
