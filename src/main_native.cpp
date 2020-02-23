@@ -18,7 +18,6 @@ void printnum(int x_, int y_, int n, int scale=1) {
   for (int y=0; y<8; y++) {
       uint8_t b = ch[y];
       for (int x=0; x<8; x++) {
-        printf("%1d", b&1);
         for (int yy=scale*y; yy < scale*(y+1); yy++) {
           for (int xx=scale*x; xx < scale*(x+1); xx++) {
             display.drawPixel(x_+xx, y_+yy, !!(b&0x80));
@@ -34,7 +33,8 @@ void printnum(int x_, int y_, int n, int scale=1) {
 int main() {
   int running = 1;
   /* Calling Arduino like setup() */
-  display.setTextColor(1);
+  display.fillScreen(1);
+  display.setTextColor(0);
   char buf[256] = {'\0'};
   DateTime t = rtc.getTime();
   snprintf(buf, 256, "%02d:%02d:%02d", t.hours, t.minutes, t.seconds);

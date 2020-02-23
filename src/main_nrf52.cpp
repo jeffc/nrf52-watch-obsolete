@@ -3,7 +3,7 @@
 #include <Arduino.h>
 #include <graphics.h>
 #include <rtc.h>
-#include <Fonts/FreeMonoBold9pt7b.h>
+#include <Fonts/FreeMonoBold18pt7b.h>
 
 #include <nrf.h>
 #include <nordic/nrfx/hal/nrf_comp.h>
@@ -36,7 +36,7 @@ void incx(void* unused) {
 
 void redraw(void* unused) {
   display.clearDisplay();
-  display.setCursor(20, 20);
+  display.setCursor(100, 100);
   display.setTextColor(0);
   display.print(x);
   display.setTextColor(1);
@@ -59,9 +59,10 @@ void setup() {
 
   pinMode(PIN_EXTCOMIN, OUTPUT);
   display.begin();
-  display.setFont(&FreeMonoBold9pt7b);
+  display.setFont(&FreeMonoBold18pt7b);
+  //display.setRotation(0);
   display.clearDisplay();
-  //display.refresh();
+  display.refresh();
   //t.begin(1000, extcomin);
   //t.start();
   //t.begin(500, incx);
@@ -69,14 +70,26 @@ void setup() {
   //t2.begin(2000, redraw);
   //t2.start();
 
+
   x = 0;
+
+  while(true) {
+    display.fillScreen(0);
+    display.refresh();
+    digitalToggle(PIN_EXTCOMIN);
+    delay(1000);
+    display.fillScreen(1);
+    display.refresh();
+    digitalToggle(PIN_EXTCOMIN);
+    delay(1000);
+  }
 
   for (int a = 0; a < SCREEN_WIDTH; a++) {
     for (int b = 0; b < SCREEN_HEIGHT; b++) {
       display.drawPixel(a, b, 0);
-      delay(1000);
-      //display.refresh();
-      display.clearDisplay();
+      delay(1);
+      display.refresh();
+      //display.clearDisplay();
     }
   }
   suspendLoop();
