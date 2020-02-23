@@ -280,6 +280,16 @@ uint8_t Adafruit_SharpMem::getPixel(uint16_t x, uint16_t y)
 
 /**************************************************************************/
 /*! 
+    @brief Clears the buffer, but doesn't send anything to the screen
+*/
+/**************************************************************************/
+void Adafruit_SharpMem::clearBuffer() 
+{
+  memset(sharpmem_buffer, 0xff, (WIDTH * HEIGHT) / 8);
+}
+
+/**************************************************************************/
+/*! 
     @brief Clears the screen
 */
 /**************************************************************************/

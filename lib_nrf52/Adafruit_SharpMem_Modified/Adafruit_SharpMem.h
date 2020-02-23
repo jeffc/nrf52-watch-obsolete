@@ -54,6 +54,7 @@ class Adafruit_SharpMem : public Adafruit_GFX {
   void drawPixel(int16_t x, int16_t y, uint16_t color);
   uint8_t getPixel(uint16_t x, uint16_t y);
   void clearDisplay();
+  void clearBuffer();
   void refresh(void);
 
  private:
