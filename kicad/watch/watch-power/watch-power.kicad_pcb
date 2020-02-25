@@ -59,6 +59,7 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
+    (grid_origin 96.52 81.28)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -360,10 +361,10 @@
       (net 6 VBUS))
     (pad MP smd roundrect (at -2.8 -1.875 90) (size 1.2 1.8) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.208333))
     (pad MP smd roundrect (at 2.8 -1.875 90) (size 1.2 1.8) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.208333))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model /home/jeff/code/nrf52-watch/kicad/libs/jst.step
+      (offset (xyz 0 1.5 -0.4))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -749,7 +750,7 @@
       (net 2 GND))
     (pad 11 thru_hole circle (at 0 0.95) (size 0.5 0.5) (drill 0.2) (layers *.Cu)
       (net 2 GND))
-    (model ${KISYS3DMOD}/Package_SON.3dshapes/Texas_DRC0010J.wrl
+    (model /home/jeff/code/nrf52-watch/kicad/libs/DRC0010J.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -850,6 +851,11 @@
     (pad P3 smd rect (at -1.7 1.5 90) (size 0.7 1.2) (layers F.Cu F.Paste F.Mask))
     (pad P4 smd rect (at 1.7 1.5 90) (size 0.7 1.2) (layers F.Cu F.Paste F.Mask))
     (pad P2 smd rect (at 1.7 -1.5 90) (size 0.7 1.2) (layers F.Cu F.Paste F.Mask))
+    (model /home/jeff/code/nrf52-watch/kicad/libs/axt510124.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module TestPoint:TestPoint_Pad_D1.0mm (layer B.Cu) (tedit 5A0F774F) (tstamp 5E5305E9)
@@ -960,10 +966,10 @@
       (net 2 GND))
     (pad MP smd roundrect (at -3.35 -2.9) (size 1.5 3.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.166667))
     (pad MP smd roundrect (at 3.35 -2.9) (size 1.5 3.4) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.166667))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model /home/jeff/code/nrf52-watch/kicad/libs/jst-ph-2.step
+      (offset (xyz 0 -4.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
