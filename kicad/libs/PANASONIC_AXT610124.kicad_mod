@@ -1,0 +1,129 @@
+
+(module PANASONIC_AXT610124 (layer F.Cu) (tedit 5E531530)
+  (descr "")
+  (fp_text reference REF** (at -0.2762875 -2.3572705 0) (layer F.SilkS)
+    (effects (font (size 0.480504724409 0.480504724409) (thickness 0.015)))
+  )
+  (fp_text value PANASONIC_AXT610124 (at 3.897367 2.398997 0) (layer F.Fab)
+    (effects (font (size 0.480760629921 0.480760629921) (thickness 0.015)))
+  )
+  (fp_line (start -2.15 -1.85) (end 2.15 -1.85) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 2.15 -1.85) (end 2.15 1.85) (layer F.CrtYd) (width 0.05))
+  (fp_line (start 2.15 1.85) (end -2.15 1.85) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -2.15 1.85) (end -2.15 -1.85) (layer F.CrtYd) (width 0.05))
+  (fp_line (start -1.9 -0.95) (end 1.9 -0.95) (layer F.Fab) (width 0.127))
+  (fp_line (start 1.9 -0.95) (end 1.9 0.95) (layer F.Fab) (width 0.127))
+  (fp_line (start 1.9 0.95) (end -1.9 0.95) (layer F.Fab) (width 0.127))
+  (fp_line (start -1.9 0.95) (end -1.9 -0.95) (layer F.Fab) (width 0.127))
+  (fp_circle (center -1.325 -1.425) (end -1.255 -1.425) (layer F.SilkS) (width 0.05))
+  (fp_poly
+    (pts
+      (xy -0.915913 -0.85)
+      (xy 0.915 -0.85)
+      (xy 0.915 -0.500497)
+      (xy -0.915913 -0.500497)
+    ) (layer Dwgs.User) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.916391 0.5)
+      (xy 0.915 0.5)
+      (xy 0.915 0.851294)
+      (xy -0.916391 0.851294)
+    ) (layer Dwgs.User) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.100078 -1.5)
+      (xy 0.1 -1.5)
+      (xy 0.1 -1.09086)
+      (xy -0.100078 -1.09086)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy 0.300459 -1.5)
+      (xy 0.5 -1.5)
+      (xy 0.5 -1.09167)
+      (xy 0.300459 -1.09167)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.500103 -1.5)
+      (xy -0.3 -1.5)
+      (xy -0.3 -1.09023)
+      (xy -0.500103 -1.09023)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.9001 -1.5)
+      (xy -0.7 -1.5)
+      (xy -0.7 -1.09012)
+      (xy -0.9001 -1.09012)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy 0.701294 -1.5)
+      (xy 0.9 -1.5)
+      (xy 0.9 -1.09201)
+      (xy 0.701294 -1.09201)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.1001 1.09)
+      (xy 0.1 1.09)
+      (xy 0.1 1.50148)
+      (xy -0.1001 1.50148)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy 0.30015 1.09)
+      (xy 0.5 1.09)
+      (xy 0.5 1.50075)
+      (xy 0.30015 1.50075)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.500606 1.09)
+      (xy -0.3 1.09)
+      (xy -0.3 1.50182)
+      (xy -0.500606 1.50182)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy -0.900094 1.09)
+      (xy -0.7 1.09)
+      (xy -0.7 1.50016)
+      (xy -0.900094 1.50016)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy 0.700894 1.09)
+      (xy 0.9 1.09)
+      (xy 0.9 1.50191)
+      (xy 0.700894 1.50191)
+    ) (layer F.Paste) (width 0.01)
+  )
+  (pad 6 smd rect (at 0.0 1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 4 smd rect (at -0.4 1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 8 smd rect (at 0.4 1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 2 smd rect (at -0.8 1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 10 smd rect (at 0.8 1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 5 smd rect (at 0.0 -1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 3 smd rect (at -0.4 -1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 7 smd rect (at 0.4 -1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 1 smd rect (at -0.8 -1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad 9 smd rect (at 0.8 -1.225) (size 0.23 0.75) (layers F.Cu F.Mask))
+  (pad P1 smd rect (at -1.6 -0.7025) (size 0.45 0.655) (layers F.Cu F.Mask F.Paste))
+  (pad P3 smd rect (at -1.6 0.7025) (size 0.45 0.655) (layers F.Cu F.Mask F.Paste))
+  (pad P4 smd rect (at 1.6 0.7025) (size 0.45 0.655) (layers F.Cu F.Mask F.Paste))
+  (pad P2 smd rect (at 1.6 -0.7025) (size 0.45 0.655) (layers F.Cu F.Mask F.Paste))
+)
