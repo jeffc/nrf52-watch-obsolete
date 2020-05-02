@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jeff/code/nrf52-watch/kicad/watch/watch-logic/watch-logic.sch)
-    (date "Mon 24 Feb 2020 09:13:30 PM EST")
+    (date "Tue 25 Feb 2020 08:42:55 PM EST")
     (tool "Eeschema (5.0.0-rc2-200-g1f6f76beb)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
