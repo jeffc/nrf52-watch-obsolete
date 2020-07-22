@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "MDBT50Q")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/113990582.lib")(options "")(descr ""))
+  (lib (name "lm3671mf")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/lm3671mf.lib")(options "")(descr ""))
+  (lib (name "M41T62LC6F")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/M41T62LC6F.lib")(options "")(descr ""))
+)

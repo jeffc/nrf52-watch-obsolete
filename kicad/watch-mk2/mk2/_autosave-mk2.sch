@@ -1,0 +1,260 @@
+EESchema Schematic File Version 5
+EELAYER 34 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 1075 4275
+Connection ~ 5150 6550
+Connection ~ 5925 6550
+Wire Wire Line
+	675  5800 1075 5800
+Wire Wire Line
+	675  6100 1075 6100
+Wire Wire Line
+	925  4275 1075 4275
+Wire Wire Line
+	1000 4475 1200 4475
+Wire Wire Line
+	1075 4275 1200 4275
+Wire Wire Line
+	1075 4375 1075 4275
+Wire Wire Line
+	1075 5800 1075 5875
+Wire Wire Line
+	1075 5875 1200 5875
+Wire Wire Line
+	1075 5975 1200 5975
+Wire Wire Line
+	1075 6100 1075 5975
+Wire Wire Line
+	1200 4375 1075 4375
+Wire Wire Line
+	2900 4275 3100 4275
+Wire Wire Line
+	2900 4375 3125 4375
+Wire Wire Line
+	2900 4475 2950 4475
+Wire Wire Line
+	2900 4575 2950 4575
+Wire Wire Line
+	2900 5075 3100 5075
+Wire Wire Line
+	3250 4475 3325 4475
+Wire Wire Line
+	3250 4575 3325 4575
+Wire Wire Line
+	5000 6525 5000 6550
+Wire Wire Line
+	5000 6550 5150 6550
+Wire Wire Line
+	5150 6200 5150 6225
+Wire Wire Line
+	5150 6525 5150 6550
+Wire Wire Line
+	5150 6550 5150 6575
+Wire Wire Line
+	5150 6975 5150 7075
+Wire Wire Line
+	5775 6525 5775 6550
+Wire Wire Line
+	5775 6550 5925 6550
+Wire Wire Line
+	5925 6200 5925 6225
+Wire Wire Line
+	5925 6525 5925 6550
+Wire Wire Line
+	5925 6550 5925 6575
+Wire Wire Line
+	5925 6975 5925 7075
+Text GLabel 1000 4475 0    50   Input ~ 0
+BOOTLOAD
+Text GLabel 3100 4275 2    50   Input ~ 0
+VUSB
+Text GLabel 3100 5075 2    50   Input ~ 0
+RST
+Text GLabel 3325 4475 2    50   Input ~ 0
+USB_DN
+Text GLabel 3325 4575 2    50   Input ~ 0
+USB_DP
+Text GLabel 5000 6525 1    50   Input ~ 0
+BOOTLOAD
+Text GLabel 5775 6525 1    50   Input ~ 0
+RST
+$Comp
+L power:VCC #PWR?
+U 1 1 00000000
+P 5150 6200
+F 0 "#PWR?" H 5150 6050 50  0001 C CNN
+F 1 "VCC" H 5165 6370 50  0000 C CNN
+F 2 "" H 5150 6200 50  0001 C CNN
+F 3 "" H 5150 6200 50  0001 C CNN
+	1    5150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 00000000
+P 5925 6200
+F 0 "#PWR?" H 5925 6050 50  0001 C CNN
+F 1 "VCC" H 5940 6370 50  0000 C CNN
+F 2 "" H 5925 6200 50  0001 C CNN
+F 3 "" H 5925 6200 50  0001 C CNN
+	1    5925 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 925 4275
+F 0 "#PWR?" H 925 4025 50  0001 C CNN
+F 1 "GND" V 930 4150 50  0000 R CNN
+F 2 "" H 925 4275 50  0001 C CNN
+F 3 "" H 925 4275 50  0001 C CNN
+	1    925  4275
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 3125 4375
+F 0 "#PWR?" H 3125 4125 50  0001 C CNN
+F 1 "GND" V 3130 4250 50  0000 R CNN
+F 2 "" H 3125 4375 50  0001 C CNN
+F 3 "" H 3125 4375 50  0001 C CNN
+	1    3125 4375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 5150 7075
+F 0 "#PWR?" H 5150 6825 50  0001 C CNN
+F 1 "GND" H 5155 6905 50  0000 C CNN
+F 2 "" H 5150 7075 50  0001 C CNN
+F 3 "" H 5150 7075 50  0001 C CNN
+	1    5150 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 00000000
+P 5925 7075
+F 0 "#PWR?" H 5925 6825 50  0001 C CNN
+F 1 "GND" H 5930 6905 50  0000 C CNN
+F 2 "" H 5925 7075 50  0001 C CNN
+F 3 "" H 5925 7075 50  0001 C CNN
+	1    5925 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 3100 4475
+F 0 "R?" V 3100 4575 50  0000 C CNN
+F 1 "27" V 3100 4475 50  0000 C CNN
+F 2 "" V 3030 4475 50  0001 C CNN
+F 3 "~" H 3100 4475 50  0001 C CNN
+	1    3100 4475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 3100 4575
+F 0 "R?" V 3100 4675 50  0000 C CNN
+F 1 "27" V 3100 4575 50  0000 C CNN
+F 2 "" V 3030 4575 50  0001 C CNN
+F 3 "~" H 3100 4575 50  0001 C CNN
+	1    3100 4575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 5150 6375
+F 0 "R?" H 5220 6420 50  0000 L CNN
+F 1 "10k" H 5220 6330 50  0000 L CNN
+F 2 "" V 5080 6375 50  0001 C CNN
+F 3 "~" H 5150 6375 50  0001 C CNN
+	1    5150 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 00000000
+P 5925 6375
+F 0 "R?" H 5995 6420 50  0000 L CNN
+F 1 "10k" H 5995 6330 50  0000 L CNN
+F 2 "" V 5855 6375 50  0001 C CNN
+F 3 "~" H 5925 6375 50  0001 C CNN
+	1    5925 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW_RESET
+U 1 1 00000000
+P 5150 6775
+F 0 "SW_RESET" V 5105 6920 50  0000 L CNN
+F 1 "SW_Push" V 5195 6920 50  0000 L CNN
+F 2 "" H 5150 6975 50  0001 C CNN
+F 3 "~" H 5150 6975 50  0001 C CNN
+	1    5150 6775
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW_BOOT
+U 1 1 00000000
+P 5925 6775
+F 0 "SW_BOOT" V 5880 6920 50  0000 L CNN
+F 1 "SW_Push" V 5970 6920 50  0000 L CNN
+F 2 "" H 5925 6975 50  0001 C CNN
+F 3 "~" H 5925 6975 50  0001 C CNN
+	1    5925 6775
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 00000000
+P 675 5950
+F 0 "Y?" V 720 5819 50  0000 R CNN
+F 1 "Crystal" V 630 5819 50  0000 R CNN
+F 2 "" H 675 5950 50  0001 C CNN
+F 3 "~" H 675 5950 50  0001 C CNN
+	1    675  5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MDBT50Q:113990582 IC?
+U 1 1 00000000
+P 1200 4275
+F 0 "IC?" H 2050 4539 50  0000 C CNN
+F 1 "113990582" H 2050 4448 50  0000 C CNN
+F 2 "113990582" H 2750 4375 50  0001 L CNN
+F 3 "http://www.raytac.com/download/index.php?index_id=24" H 2750 4275 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module" H 2750 4175 50  0001 L CNN "Description"
+F 5 "2" H 2750 4075 50  0001 L CNN "Height"
+F 6 "Seeed Studio" H 2750 3975 50  0001 L CNN "Manufacturer_Name"
+F 7 "113990582" H 2750 3875 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "713-113990582" H 2750 3775 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=713-113990582" H 2750 3675 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 2750 3575 50  0001 L CNN "RS Part Number"
+F 11 "" H 2750 3475 50  0001 L CNN "RS Price/Stock"
+	1    1200 4275
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
