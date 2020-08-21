@@ -1,5 +1,10 @@
 (sym_lib_table
   (lib (name "MDBT50Q")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/113990582.lib")(options "")(descr ""))
   (lib (name "lm3671mf")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/lm3671mf.lib")(options "")(descr ""))
+  (lib (name "max17220")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/max17220.lib")(options "")(descr ""))
+  (lib (name "M41T62F")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/M41T62F.lib")(options "")(descr ""))
+  (lib (name "max17262")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/max17262.lib")(options "")(descr ""))
   (lib (name "M41T62LC6F")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/M41T62LC6F.lib")(options "")(descr ""))
+  (lib (name "AXT610124")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/AXT610124.lib")(options "")(descr ""))
+  (lib (name "AXT510124")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/AXT510124.lib")(options "")(descr ""))
 )

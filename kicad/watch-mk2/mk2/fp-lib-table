@@ -1,4 +1,6 @@
 (fp_lib_table
   (lib (name "113990582")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/113990582.mod")(options "")(descr ""))
   (lib (name "libs")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/")(options "")(descr ""))
+  (lib (name "max17262")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/max17262.pretty")(options "")(descr ""))
+  (lib (name "max17220")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/max17220.pretty")(options "")(descr ""))
 )

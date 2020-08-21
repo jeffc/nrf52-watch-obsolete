@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX17220ELT+
+D MAX17220ELT+
+F https://datasheets.maximintegrated.com/en/ds/MAX17220-MAX17225.pdf
+$ENDCMP
+# end doc library

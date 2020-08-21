@@ -1,0 +1,53 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Maxim Integrated MAX17220ELT+
+#
+DEF MAX17220ELT+ U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "MAX17220ELT+" 0 300 50 H V L CNN 
+F2 "Maxim_Integrated-L622-1C-0-E-*" 0 400 50 H I L CNN 
+F3 "https://datasheets.maximintegrated.com/en/ds/MAX17220-MAX17225.pdf" 0 500 50 H I L CNN 
+F4 "No" 0 600 50 H I L CNN "automotive"
+F5 "IC" 0 700 50 H I L CNN "category"
+F6 "Integrated Circuits (ICs)" 0 800 50 H I L CNN "device class L1"
+F7 "Power Management ICs" 0 900 50 H I L CNN "device class L2"
+F8 "Voltage Regulators - Switching" 0 1000 50 H I L CNN "device class L3"
+F9 "IC REG BOOST ADJ 225MA 6UDFN" 0 1100 50 H I L CNN "digikey description"
+F10 "MAX17220ELT+-ND" 0 1200 50 H I L CNN "digikey part number"
+F11 "https://pdfserv.maximintegrated.com/land_patterns/90-0004.PDF" 0 1300 50 H I L CNN "footprint url"
+F12 "0.8mm" 0 1400 50 H I L CNN "height"
+F13 "DFN200X200X75-6" 0 1500 50 H I L CNN "ipc land pattern name"
+F14 "Yes" 0 1600 50 H I L CNN "lead free"
+F15 "a609d78319b7875a" 0 1700 50 H I L CNN "library id"
+F16 "Maxim Integrated" 0 1800 50 H I L CNN "manufacturer"
+F17 "75%" 0 1900 50 H I L CNN "max duty cycle"
+F18 "+150°C" 0 2000 50 H I L CNN "max junction temp"
+F19 "357.8mW" 0 2100 50 H I L CNN "max power dissipation"
+F20 "5.5V" 0 2200 50 H I L CNN "max supply voltage"
+F21 "400mV" 0 2300 50 H I L CNN "min supply voltage"
+F22 "Conv DC-DC Single Step Up 0.4V to 5.5V 6-Pin uDFN" 0 2400 50 H I L CNN "mouser description"
+F23 "700-MAX17220ELT+" 0 2500 50 H I L CNN "mouser part number"
+F24 "0.0001-0.3uA" 0 2600 50 H I L CNN "nominal supply current"
+F25 "1" 0 2700 50 H I L CNN "number of outputs"
+F26 "225mA" 0 2800 50 H I L CNN "output current"
+F27 "AdjustableProgrammable" 0 2900 50 H I L CNN "output type"
+F28 "1.8-5V" 0 3000 50 H I L CNN "output voltage"
+F29 "UDFN6" 0 3100 50 H I L CNN "package"
+F30 "Yes" 0 3200 50 H I L CNN "rohs"
+F31 "0.02mm" 0 3300 50 H I L CNN "standoff height"
+F32 "Boost" 0 3400 50 H I L CNN "switching topology"
+F33 "+85°C" 0 3500 50 H I L CNN "temperature range high"
+F34 "-40°C" 0 3600 50 H I L CNN "temperature range low"
+DRAW
+X EN 6 100 -300 100 R 40 40 1 1 I 
+X IN 5 100 0 100 R 40 40 1 1 I 
+X LX 2 1100 -300 100 L 40 40 1 1 P 
+X OUT 1 1100 0 100 L 40 40 1 1 O 
+X SEL 4 100 -600 100 R 40 40 1 1 P 
+X GND 3 1100 -600 100 L 40 40 1 1 W 
+S 200 100 1000 -700 1 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library

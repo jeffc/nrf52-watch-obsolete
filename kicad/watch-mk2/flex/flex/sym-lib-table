@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "AXT610124")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/AXT610124.lib")(options "")(descr ""))
+  (lib (name "AXT510124")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/AXT510124.lib")(options "")(descr ""))
+)

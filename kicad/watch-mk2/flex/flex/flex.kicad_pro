@@ -88,12 +88,12 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.01,
+        "min_copper_edge_clearance": 0.3,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.09999999999999999,
+        "min_track_width": 0.19999999999999998,
         "min_via_annulus": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
@@ -102,14 +102,13 @@
         "solder_paste_margin_ratio": -0.0
       },
       "track_widths": [
-        0.13,
-        0.1,
-        0.13
+        0.25,
+        1.7
       ],
       "via_dimensions": [
         {
-          "diameter": 0.5,
-          "drill": 0.3
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_use_no_outline": false
@@ -131,12 +130,25 @@
         0,
         0,
         0,
+        1,
         0,
         0,
         0,
         0,
+        2
+      ],
+      [
         0,
-        1
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
       ],
       [
         0,
@@ -144,12 +156,25 @@
         0,
         0,
         0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
         0,
         0,
         0,
-        0,
-        0,
-        1
+        1,
+        1,
+        2,
+        1,
+        1,
+        2
       ],
       [
         0,
@@ -157,103 +182,12 @@
         0,
         0,
         0,
+        1,
         0,
         0,
         0,
         0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
+        2
       ],
       [
         1,
@@ -266,7 +200,72 @@
         1,
         1,
         1,
-        1
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        0,
+        1,
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
       ]
     ],
     "rule_severities": {
@@ -277,7 +276,7 @@
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_sheet_names": "error",
-      "global_label_dangling": "ignore",
+      "global_label_dangling": "error",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "multiple_net_names": "error",
@@ -285,8 +284,8 @@
       "no_connect_connected": "error",
       "no_connect_dangling": "error",
       "pin_not_connected": "error",
-      "pin_not_driven": "ignore",
-      "pin_to_pin": "ignore",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
       "similar_labels": "error",
       "unresolved_variable": "error"
     }
@@ -296,67 +295,22 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mk2.kicad_pro",
+    "filename": "flex.kicad_pro",
     "version": 1
   },
   "net_settings": {
     "classes": [
       {
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
-        "track_width": 0.13,
-        "via_diameter": 0.5,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "smol",
-        "nets": [
-          "5V",
-          "BACKLIGHT",
-          "BATTIRQ",
-          "BATTPOW",
-          "BUTTON1",
-          "BUTTON2",
-          "BUTTON3",
-          "BUTTON4",
-          "BUTTON5",
-          "BUZZER",
-          "CHGNG",
-          "FLASHLIGHT",
-          "FLASH_CS",
-          "LCD_CS",
-          "LCD_DISP",
-          "RST",
-          "RTCIRQ",
-          "SCL",
-          "SDA",
-          "SPI_CLK",
-          "SPI_MISO",
-          "SPI_MOSI",
-          "SQW",
-          "SWDCLK",
-          "SWDIO",
-          "USB_DN",
-          "USB_DP",
-          "VIN",
-          "VUSB",
-          "XL1",
-          "XL2"
-        ],
-        "track_width": 0.13,
-        "via_diameter": 0.5,
-        "via_drill": 0.3
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
       }
     ],
     "meta": {
@@ -370,8 +324,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "../../../../../../../mnt/tron/Jeff/Downloads/mk2.step",
-      "vmrl": "../../../../../../../mnt/tron/Jeff/Downloads/mk2-2.wrl"
+      "step": "",
+      "vmrl": ""
     },
     "page_layout_descr_file": ""
   },
@@ -400,7 +354,7 @@
   },
   "sheets": [
     [
-      "95db29f4-6d79-47a1-9884-6f5b96055745",
+      "a40328ac-5127-47f0-9bac-dd96ac12f373",
       ""
     ]
   ],
