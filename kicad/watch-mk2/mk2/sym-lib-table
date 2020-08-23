@@ -7,4 +7,6 @@
   (lib (name "M41T62LC6F")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/M41T62LC6F.lib")(options "")(descr ""))
   (lib (name "AXT610124")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/AXT610124.lib")(options "")(descr ""))
   (lib (name "AXT510124")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/AXT510124.lib")(options "")(descr ""))
+  (lib (name "BMA400")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/BMA400.lib")(options "")(descr ""))
+  (lib (name "molex_503480-0400")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/molex_503480-0400.lib")(options "")(descr ""))
 )

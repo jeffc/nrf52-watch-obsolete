@@ -322,7 +322,6 @@
         "microvia_drill": 0.1,
         "name": "smol",
         "nets": [
-          "5V",
           "BACKLIGHT",
           "BATTIRQ",
           "BATTPOW",
@@ -334,7 +333,6 @@
           "BUZZER",
           "CHGNG",
           "FLASHLIGHT",
-          "FLASH_CS",
           "LCD_CS",
           "LCD_DISP",
           "RST",
@@ -400,7 +398,7 @@
   },
   "sheets": [
     [
-      "95db29f4-6d79-47a1-9884-6f5b96055745",
+      "e643bc4b-23b4-4d8e-8dd4-bafd87c486f3",
       ""
     ]
   ],

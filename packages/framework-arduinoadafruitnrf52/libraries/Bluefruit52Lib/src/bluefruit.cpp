@@ -122,7 +122,7 @@ static void nrf_error_cb(uint32_t id, uint32_t pc, uint32_t info)
     LOG_LV1("SD Err", "assert at %s : %d", assert_info->p_file_name, assert_info->line_num);
   }
 
-  while(1) { }
+  while(1) yield();
 #endif
 }
 
@@ -141,7 +141,7 @@ AdafruitBluefruit::AdafruitBluefruit(void)
   /*------------------------------------------------------------------*/
   varclr(&_sd_cfg);
 
-  _sd_cfg.attr_table_size = 0x800;
+  _sd_cfg.attr_table_size = CFG_SD_ATTR_TABLE_SIZE;
   _sd_cfg.uuid128_max     = BLE_UUID_VS_COUNT_DEFAULT;
   _sd_cfg.service_changed = 1;
 
@@ -186,11 +186,6 @@ AdafruitBluefruit::AdafruitBluefruit(void)
                   .kdist_own    = { .enc = 1, .id = 1},
                   .kdist_peer   = { .enc = 1, .id = 1},
                 });
-
-COMMENT_OUT(
-  _auth_type = BLE_GAP_AUTH_KEY_TYPE_NONE;
-  varclr(_pin);
-)
 }
 
 void AdafruitBluefruit::configServiceChanged(bool changed)
@@ -326,7 +321,7 @@ bool AdafruitBluefruit::begin(uint8_t prph_count, uint8_t central_count)
    * prph and central connections for optimal SRAM usage.
    *
    * - If Peripheral mode is enabled
-   *   - ATTR Table Size          = 0x800.
+   *   - ATTR Table Size          = CFG_SD_ATTR_TABLE_SIZE.
    *   - HVN TX Queue Size        = 3
    *
    * - If Central mode is enabled
@@ -828,7 +823,7 @@ void AdafruitBluefruit::_ble_handler(ble_evt_t* evt)
     {
       ble_gap_evt_disconnected_t const* para = &evt->evt.gap_evt.params.disconnected;
 
-      LOG_LV2("GAP", "Disconnect Reason 0x%02X", evt->evt.gap_evt.params.disconnected.reason);
+      LOG_LV2("GAP", "Disconnect Reason: %s", dbg_hci_str(evt->evt.gap_evt.params.disconnected.reason));
 
       // Turn off Conn LED If not connected at all
       if ( !this->connected() ) _setConnLed(false);
