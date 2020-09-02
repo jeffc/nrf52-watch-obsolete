@@ -36,7 +36,6 @@
       16,
       17,
       18,
-      19,
       20,
       21,
       22,
@@ -53,7 +52,7 @@
       33,
       34
     ],
-    "visible_layers": "03ef3_80000001"
+    "visible_layers": "03ee3_80000001"
   },
   "meta": {
     "filename": "mk2.kicad_prl",
