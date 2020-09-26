@@ -633,7 +633,7 @@
   (symbol (lib_id "Device:R") (at 126.365 64.135 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "e3642b18-fe7f-49e6-aba7-825f27d6e656")
-    (property "Reference" "R?" (id 0) (at 128.1431 62.9856 0)
+    (property "Reference" "R3" (id 0) (at 128.1431 62.9856 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3" (id 1) (at 128.143 65.284 0)
@@ -764,7 +764,7 @@
       (reference "R2") (unit 1)
     )
     (path "/e3642b18-fe7f-49e6-aba7-825f27d6e656"
-      (reference "R?") (unit 1)
+      (reference "R3") (unit 1)
     )
     (path "/a7e76ac4-6608-467a-82aa-a60c16cb0165"
       (reference "SW1") (unit 1)

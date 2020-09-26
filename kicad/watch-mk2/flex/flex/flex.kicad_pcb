@@ -74,7 +74,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../gerber/rev2/")
+      (outputdirectory "../gerber/rev2.1/")
     )
   )
 
@@ -148,9 +148,9 @@
     (fp_line (start 3.15 -1.6) (end 3.15 1.6) (layer "F.Fab") (width 0.1))
     (fp_line (start -3.15 -1.6) (end 3.15 -1.6) (layer "F.Fab") (width 0.1))
     (fp_line (start -3.15 1.6) (end -3.15 -1.6) (layer "F.Fab") (width 0.1))
-    (pad "2" smd roundrect (at 2.9 0 180) (size 1.35 3.35) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.185185)
+    (pad "2" smd roundrect (at 2.9 0 180) (size 1.35 3.35) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1851851851851852)
       (net 1 "Net-(D1-Pad2)") (tstamp 5e795c4e-f8f3-45c8-817b-467c2b9ec392))
-    (pad "1" smd roundrect (at -2.9 0 180) (size 1.35 3.35) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.185185)
+    (pad "1" smd roundrect (at -2.9 0 180) (size 1.35 3.35) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1851851851851852)
       (net 4 "VIN") (tstamp e23ad262-871b-444e-9a4d-efe430584bf7))
     (model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl"
       (at (xyz 0 0 0))
