@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/jeff/code/nrf52-watch/kicad/watch-mk2/mk2/mk2.kicad_sch</source>
-    <date>Sat 01 Aug 2020 11:55:26 AM EDT</date>
+    <date>Sun 04 Oct 2020 04:55:22 PM EDT</date>
     <tool>Eeschema (5.99.0-2309-gaf729d578)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -26,7 +26,7 @@
   <components>
     <comp ref="BT1">
       <value>Battery_Cell</value>
-      <footprint>Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical</footprint>
+      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="package">DNP</field>
@@ -84,27 +84,20 @@
       <tstamp>2aab8132-0ef5-42b0-954e-c87bde9af620</tstamp>
     </comp>
     <comp ref="C5">
-      <value>11mF</value>
-      <footprint>Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="package">DNP</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>1a73973e-dc81-4302-a1a2-662b92b4b116</tstamp>
-    </comp>
-    <comp ref="C6">
-      <value>10uF</value>
+      <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C19702</field>
-        <field name="package">0603</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>89f20e12-8a1e-4d6c-97ec-7f84d1abce46</tstamp>
+      <tstamp>5b34fa50-4002-4ae9-9a7e-5f60201dcd57</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>019c4a33-12bc-4e9c-a156-482b8f962da8</tstamp>
     </comp>
     <comp ref="C7">
       <value>10uF</value>
@@ -119,16 +112,12 @@
       <tstamp>1868c15e-804f-4449-bd05-783da427e2a6</tstamp>
     </comp>
     <comp ref="C8">
-      <value>10uF</value>
+      <value>2.2uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C19702</field>
-        <field name="package">0603</field>
-      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>672c6ee8-e2a3-4404-b09c-bb9aaa9f5ca7</tstamp>
+      <tstamp>f05acaf0-33ef-4cbb-8aac-6e91398385bc</tstamp>
     </comp>
     <comp ref="C9">
       <value>560pF</value>
@@ -170,22 +159,12 @@
       <footprint>Package_TO_SOT_SMD:TSOT-23</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="LCSC">C155330</field>
         <field name="package">DNP</field>
       </fields>
       <libsource lib="Device" part="D_Schottky_x2_KCom_AAK" description="Dual Schottky diode, common cathode on pin 3"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>941f28e9-df55-4ecb-9800-f5ed53e5d326</tstamp>
-    </comp>
-    <comp ref="D2">
-      <value>D_Schottky</value>
-      <footprint>Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="package">0603</field>
-      </fields>
-      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>436114be-70c6-43d8-9e4c-444cee98c7b2</tstamp>
     </comp>
     <comp ref="IC1">
       <value>MDBT50Q</value>
@@ -194,7 +173,6 @@
       <fields>
         <field name="Description">Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module</field>
         <field name="Height">2</field>
-        <field name="LCSC">C155330</field>
         <field name="Manufacturer_Name">Seeed Studio</field>
         <field name="Manufacturer_Part_Number">113990582</field>
         <field name="Mouser Part Number">713-113990582</field>
@@ -240,7 +218,7 @@
     </comp>
     <comp ref="J3">
       <value>Conn_01x02_Female</value>
-      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical</footprint>
+      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="package">DNP</field>
@@ -249,27 +227,29 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>a3a08a48-5150-49ee-a763-67473b0b4c91</tstamp>
     </comp>
-    <comp ref="J5">
-      <value>Conn_01x04_Female</value>
-      <footprint>libs:ffc-0.5mm-4</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="package">DNP</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_01x04_Female" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <comp ref="J4">
+      <value>503480-0400</value>
+      <footprint>libs:MOLEX_503480-0400</footprint>
+      <datasheet>Molex, LLC</datasheet>
+      <libsource lib="molex_503480-0400" part="503480-0400" description=""/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>c661775f-7c1c-4624-89d6-96bf6c5b7c55</tstamp>
+      <tstamp>ace2b54e-9138-4c5b-8e4a-53defdd86107</tstamp>
     </comp>
-    <comp ref="JP1">
-      <value>FUEL_BYP</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+    <comp ref="J5">
+      <value>Conn_01x02_Female</value>
+      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <fields>
-        <field name="package">DNP</field>
-      </fields>
-      <libsource lib="Device" part="Jumper_NO_Small" description="Jumper, normally open, small symbol"/>
+      <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>63d47eae-eaac-426b-b6d7-8a4a47f82039</tstamp>
+      <tstamp>837fd55c-5107-4f35-94a1-715d0200012e</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x02_Female</value>
+      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>28c64c49-4e3e-4f80-a0b7-4bb97b2abec7</tstamp>
     </comp>
     <comp ref="L1">
       <value>2.2uH</value>
@@ -281,17 +261,6 @@
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>c0c7d71c-91b0-4179-92d9-ad515091346a</tstamp>
-    </comp>
-    <comp ref="L2">
-      <value>2.2uH</value>
-      <footprint>Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="package">0603</field>
-      </fields>
-      <libsource lib="Device" part="L" description="Inductor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>08d8687c-84db-4f94-a9ab-c16b36d4ac48</tstamp>
     </comp>
     <comp ref="P1">
       <value>AXT610124</value>
@@ -356,18 +325,6 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>e065d566-f7c1-40eb-a075-1d3be4b073ba</tstamp>
-    </comp>
-    <comp ref="R5">
-      <value>100k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="LCSC">C25803</field>
-        <field name="package">0603</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5a798a13-86f5-4862-9f43-84bfcd61920c</tstamp>
     </comp>
     <comp ref="R6">
       <value>10k</value>
@@ -454,7 +411,7 @@
       <tstamp>99893e40-adca-4dd4-97cf-6fbe8a57141b</tstamp>
     </comp>
     <comp ref="R16">
-      <value>1k</value>
+      <value>10</value>
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -553,17 +510,35 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>af7609c3-9ede-4cfd-b92c-144d3ae16ec7</tstamp>
     </comp>
-    <comp ref="U1">
-      <value>W25X20CLUXIG</value>
-      <footprint>libs:SON50P300X200X60-9N</footprint>
-      <datasheet>https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf</datasheet>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
       <fields>
-        <field name="LCSC">C164121</field>
         <field name="package">DNP</field>
       </fields>
-      <libsource lib="Memory_Flash" part="AT25SF081-XMHF-X" description="8-Mbit, 2.3V Minimum SPI Serial Flash Memory with Dual-I/O and Quad-I/O Support, TSSOP-8"/>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>0696098d-a8c4-47be-b243-64597815936c</tstamp>
+      <tstamp>f79395a8-6e02-4aaa-8c0e-ec9e20698410</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="package">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>3faf79ed-844c-417c-a789-138567e59103</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TPS60151DRV</value>
+      <footprint>Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps60151.pdf</datasheet>
+      <libsource lib="Regulator_SwitchedCapacitor" part="TPS60151DRV" description="5V, 140mA charge-pump, WSON-6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>9f2c35dd-e1ec-4905-9375-b76b83ace062</tstamp>
     </comp>
     <comp ref="U2">
       <value>LM3671MF-2.8_NOPB</value>
@@ -587,46 +562,20 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>d8368d8a-9e41-4fc2-85c7-67e8cbeaafb5</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>MAX17220ELT+</value>
-      <footprint>max17220:Maxim_Integrated-L622-1C-0-E-IPC_A</footprint>
-      <datasheet>https://datasheets.maximintegrated.com/en/ds/MAX17220-MAX17225.pdf</datasheet>
+    <comp ref="U4">
+      <value>BMA400</value>
+      <footprint>libs:XDCR_BMA400</footprint>
+      <datasheet>Bosch Sensortec</datasheet>
       <fields>
-        <field name="automotive">No</field>
-        <field name="category">IC</field>
-        <field name="device class L1">Integrated Circuits (ICs)</field>
-        <field name="device class L2">Power Management ICs</field>
-        <field name="device class L3">Voltage Regulators - Switching</field>
-        <field name="digikey description">IC REG BOOST ADJ 225MA 6UDFN</field>
-        <field name="digikey part number">MAX17220ELT+-ND</field>
-        <field name="footprint url">https://pdfserv.maximintegrated.com/land_patterns/90-0004.PDF</field>
-        <field name="height">0.8mm</field>
-        <field name="ipc land pattern name">DFN200X200X75-6</field>
-        <field name="lead free">Yes</field>
-        <field name="library id">a609d78319b7875a</field>
-        <field name="manufacturer">Maxim Integrated</field>
-        <field name="max duty cycle">75%</field>
-        <field name="max junction temp">+150°C</field>
-        <field name="max power dissipation">357.8mW</field>
-        <field name="max supply voltage">5.5V</field>
-        <field name="min supply voltage">400mV</field>
-        <field name="mouser description">Conv DC-DC Single Step Up 0.4V to 5.5V 6-Pin uDFN</field>
-        <field name="mouser part number">700-MAX17220ELT+</field>
-        <field name="nominal supply current">0.0001-0.3uA</field>
-        <field name="number of outputs">1</field>
-        <field name="output current">225mA</field>
-        <field name="output type">AdjustableProgrammable</field>
-        <field name="output voltage">1.8-5V</field>
-        <field name="package">UDFN6</field>
-        <field name="rohs">Yes</field>
-        <field name="standoff height">0.02mm</field>
-        <field name="switching topology">Boost</field>
-        <field name="temperature range high">+85°C</field>
-        <field name="temperature range low">-40°C</field>
+        <field name="Field4">None</field>
+        <field name="Field5">Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 12-LGA _2x2_</field>
+        <field name="Field6">BMA400</field>
+        <field name="Field7">Unavailable</field>
+        <field name="Field8">LGA-12 Bosch Tools</field>
       </fields>
-      <libsource lib="max17220" part="MAX17220ELT+" description="MAX17220ELT+"/>
+      <libsource lib="BMA400" part="BMA400" description=""/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>79e5390a-5e92-44ea-8200-c487a43b6e39</tstamp>
+      <tstamp>2a83b3cd-2840-41ba-ae4b-349291d27fd7</tstamp>
     </comp>
     <comp ref="U6">
       <value>MAX17262REWL+T</value>
@@ -702,6 +651,32 @@
         <pin num="10" name="10" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="BMA400" part="BMA400">
+      <docs>Bosch Sensortec</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BMA400</field>
+        <field name="Footprint">XDCR_BMA400</field>
+        <field name="Datasheet">Bosch Sensortec</field>
+        <field name="Field4">None</field>
+        <field name="Field5">Accelerometer X, Y, Z Axis ±2g, 4g, 8g, 16g 12-LGA _2x2_</field>
+        <field name="Field6">BMA400</field>
+        <field name="Field7">Unavailable</field>
+        <field name="Field8">LGA-12 Bosch Tools</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDO" type="BiDi"/>
+        <pin num="2" name="SDX" type="BiDi"/>
+        <pin num="3" name="VDDIO" type="power_in"/>
+        <pin num="5" name="INT1" type="BiDi"/>
+        <pin num="6" name="INT2" type="BiDi"/>
+        <pin num="7" name="VDD" type="power_in"/>
+        <pin num="8" name="GNDIO" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="~CSB~" type="input"/>
+        <pin num="12" name="SCX" type="input"/>
+      </pins>
+    </libpart>
     <libpart lib="Battery_Management" part="MCP73831-2-OT">
       <description>Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package</description>
       <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</docs>
@@ -736,24 +711,6 @@
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector" part="Conn_01x04_Female">
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x04_Female</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-        <pin num="4" name="Pin_4" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="Conn_01x10_Female">
@@ -888,25 +845,6 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="D_Schottky">
-      <description>Schottky diode</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>TO-???*</fp>
-        <fp>*_Diode_*</fp>
-        <fp>*SingleDiode*</fp>
-        <fp>D_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">D_Schottky</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="K" type="passive"/>
-        <pin num="2" name="A" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Device" part="D_Schottky_x2_KCom_AAK">
       <description>Dual Schottky diode, common cathode on pin 3</description>
       <docs>~</docs>
@@ -919,25 +857,6 @@
         <pin num="1" name="A" type="passive"/>
         <pin num="2" name="A" type="passive"/>
         <pin num="3" name="K" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Device" part="Jumper_NO_Small">
-      <description>Jumper, normally open, small symbol</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>SolderJumper*Open*</fp>
-        <fp>Jumper*</fp>
-        <fp>TestPoint*2Pads*</fp>
-        <fp>TestPoint*Bridge*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">Jumper_NO_Small</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="L">
@@ -1085,27 +1004,26 @@
         <pin num="61" name="P1.01" type="unspc"/>
       </pins>
     </libpart>
-    <libpart lib="Memory_Flash" part="AT25SF081-XMHF-X">
-      <description>8-Mbit, 2.3V Minimum SPI Serial Flash Memory with Dual-I/O and Quad-I/O Support, TSSOP-8</description>
-      <docs>https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf</docs>
+    <libpart lib="Regulator_SwitchedCapacitor" part="TPS60151DRV">
+      <description>5V, 140mA charge-pump, WSON-6</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps60151.pdf</docs>
       <footprints>
-        <fp>TSSOP?8*4.4x3mm*P0.65mm*</fp>
+        <fp>WSON*1EP*2x2mm*P0.65mm*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">AT25SF081-XMHF-X</field>
-        <field name="Footprint">Package_SO:TSSOP-8_4.4x3mm_P0.65mm</field>
-        <field name="Datasheet">https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf</field>
+        <field name="Value">TPS60151DRV</field>
+        <field name="Footprint">Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps60151.pdf</field>
       </fields>
       <pins>
-        <pin num="1" name="~CS" type="input"/>
-        <pin num="2" name="SO/IO1" type="BiDi"/>
-        <pin num="3" name="~WP~/IO2" type="BiDi"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="SI/IO0" type="BiDi"/>
-        <pin num="6" name="SCK" type="input"/>
-        <pin num="7" name="~HOLD~/IO3" type="BiDi"/>
-        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="VOUT" type="power_out"/>
+        <pin num="4" name="CP+" type="passive"/>
+        <pin num="5" name="CP-" type="passive"/>
+        <pin num="6" name="ENA" type="input"/>
+        <pin num="7" name="EP" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Switch" part="SW_Push">
@@ -1138,55 +1056,6 @@
         <pin num="3" name="EN" type="passive"/>
         <pin num="4" name="FB" type="passive"/>
         <pin num="5" name="SW" type="output"/>
-      </pins>
-    </libpart>
-    <libpart lib="max17220" part="MAX17220ELT+">
-      <description>MAX17220ELT+</description>
-      <docs>https://datasheets.maximintegrated.com/en/ds/MAX17220-MAX17225.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">MAX17220ELT+</field>
-        <field name="Footprint">Maxim_Integrated-L622-1C-0-E-*</field>
-        <field name="Datasheet">https://datasheets.maximintegrated.com/en/ds/MAX17220-MAX17225.pdf</field>
-        <field name="automotive">No</field>
-        <field name="category">IC</field>
-        <field name="device class L1">Integrated Circuits (ICs)</field>
-        <field name="device class L2">Power Management ICs</field>
-        <field name="device class L3">Voltage Regulators - Switching</field>
-        <field name="digikey description">IC REG BOOST ADJ 225MA 6UDFN</field>
-        <field name="digikey part number">MAX17220ELT+-ND</field>
-        <field name="footprint url">https://pdfserv.maximintegrated.com/land_patterns/90-0004.PDF</field>
-        <field name="height">0.8mm</field>
-        <field name="ipc land pattern name">DFN200X200X75-6</field>
-        <field name="lead free">Yes</field>
-        <field name="library id">a609d78319b7875a</field>
-        <field name="manufacturer">Maxim Integrated</field>
-        <field name="max duty cycle">75%</field>
-        <field name="max junction temp">+150°C</field>
-        <field name="max power dissipation">357.8mW</field>
-        <field name="max supply voltage">5.5V</field>
-        <field name="min supply voltage">400mV</field>
-        <field name="mouser description">Conv DC-DC Single Step Up 0.4V to 5.5V 6-Pin uDFN</field>
-        <field name="mouser part number">700-MAX17220ELT+</field>
-        <field name="nominal supply current">0.0001-0.3uA</field>
-        <field name="number of outputs">1</field>
-        <field name="output current">225mA</field>
-        <field name="output type">AdjustableProgrammable</field>
-        <field name="output voltage">1.8-5V</field>
-        <field name="package">UDFN6</field>
-        <field name="rohs">Yes</field>
-        <field name="standoff height">0.02mm</field>
-        <field name="switching topology">Boost</field>
-        <field name="temperature range high">+85°C</field>
-        <field name="temperature range low">-40°C</field>
-      </fields>
-      <pins>
-        <pin num="1" name="OUT" type="output"/>
-        <pin num="2" name="LX" type="passive"/>
-        <pin num="3" name="GND" type="power_in"/>
-        <pin num="4" name="SEL" type="passive"/>
-        <pin num="5" name="IN" type="input"/>
-        <pin num="6" name="EN" type="input"/>
       </pins>
     </libpart>
     <libpart lib="max17262" part="MAX17262REWL+T">
@@ -1234,10 +1103,30 @@
         <pin num="C3" name="GND" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="molex_503480-0400" part="503480-0400">
+      <docs>Molex, LLC</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">503480-0400</field>
+        <field name="Footprint">MOLEX_503480-0400</field>
+        <field name="Datasheet">Molex, LLC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD__1" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="AXT610124">
       <uri>/home/jeff/code/nrf52-watch/kicad/libs/AXT610124.lib</uri>
+    </library>
+    <library logical="BMA400">
+      <uri>/home/jeff/code/nrf52-watch/kicad/libs/BMA400.lib</uri>
     </library>
     <library logical="Battery_Management">
       <uri>/usr/share/kicad/library/Battery_Management.lib</uri>
@@ -1254,8 +1143,8 @@
     <library logical="MDBT50Q">
       <uri>/home/jeff/code/nrf52-watch/kicad/libs/113990582.lib</uri>
     </library>
-    <library logical="Memory_Flash">
-      <uri>/usr/share/kicad/library/Memory_Flash.lib</uri>
+    <library logical="Regulator_SwitchedCapacitor">
+      <uri>/usr/share/kicad/library/Regulator_SwitchedCapacitor.lib</uri>
     </library>
     <library logical="Switch">
       <uri>/usr/share/kicad/library/Switch.lib</uri>
@@ -1263,91 +1152,93 @@
     <library logical="lm3671mf">
       <uri>/home/jeff/code/nrf52-watch/kicad/libs/lm3671mf.lib</uri>
     </library>
-    <library logical="max17220">
-      <uri>/home/jeff/code/nrf52-watch/kicad/libs/max17220.lib</uri>
-    </library>
     <library logical="max17262">
       <uri>/home/jeff/code/nrf52-watch/kicad/libs/max17262.lib</uri>
     </library>
+    <library logical="molex_503480-0400">
+      <uri>/home/jeff/code/nrf52-watch/kicad/libs/molex_503480-0400.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="+BATT">
-      <node ref="BT1" pin="1" pinfunction="+"/>
-      <node ref="JP1" pin="1" pinfunction="1"/>
-      <node ref="U6" pin="A1" pinfunction="TH"/>
-      <node ref="U6" pin="A2" pinfunction="BATT"/>
-    </net>
-    <net code="2" name="/XL1">
-      <node ref="C1" pin="2"/>
-      <node ref="IC1" pin="17" pinfunction="P0.00/XL1"/>
-      <node ref="Y1" pin="2" pinfunction="2"/>
-    </net>
-    <net code="3" name="/XL2">
-      <node ref="C2" pin="2"/>
-      <node ref="IC1" pin="18" pinfunction="P0.01/XL2"/>
-      <node ref="Y1" pin="1" pinfunction="1"/>
-    </net>
-    <net code="4" name="5V">
+    <net code="1" name="+5V">
       <node ref="C8" pin="1"/>
       <node ref="J1" pin="6" pinfunction="Pin_6"/>
       <node ref="J1" pin="7" pinfunction="Pin_7"/>
       <node ref="J1" pin="8" pinfunction="Pin_8"/>
-      <node ref="U5" pin="1" pinfunction="OUT"/>
+      <node ref="TP6" pin="1" pinfunction="1"/>
+      <node ref="U1" pin="3" pinfunction="VOUT"/>
     </net>
-    <net code="5" name="BACKLIGHT">
-      <node ref="IC1" pin="21" pinfunction="P0.05"/>
+    <net code="2" name="+BATT">
+      <node ref="BT1" pin="1" pinfunction="+"/>
+      <node ref="U6" pin="A1" pinfunction="TH"/>
+      <node ref="U6" pin="A2" pinfunction="BATT"/>
+    </net>
+    <net code="3" name="/XL1">
+      <node ref="C1" pin="2"/>
+      <node ref="IC1" pin="17" pinfunction="P0.00/XL1"/>
+      <node ref="Y1" pin="2" pinfunction="2"/>
+    </net>
+    <net code="4" name="/XL2">
+      <node ref="C2" pin="2"/>
+      <node ref="IC1" pin="18" pinfunction="P0.01/XL2"/>
+      <node ref="Y1" pin="1" pinfunction="1"/>
+    </net>
+    <net code="5" name="ACCELINT1">
+      <node ref="IC1" pin="7" pinfunction="P1.14"/>
+      <node ref="U4" pin="5" pinfunction="INT1"/>
+    </net>
+    <net code="6" name="ACCELINT2">
+      <node ref="IC1" pin="9" pinfunction="P0.03"/>
+      <node ref="U4" pin="6" pinfunction="INT2"/>
+    </net>
+    <net code="7" name="BACKLIGHT">
+      <node ref="IC1" pin="45" pinfunction="P0.23"/>
       <node ref="Q3" pin="1" pinfunction="G"/>
       <node ref="R13" pin="1"/>
     </net>
-    <net code="6" name="BATTIRQ">
+    <net code="8" name="BATTIRQ">
       <node ref="IC1" pin="54" pinfunction="P0.10/NFC2"/>
     </net>
-    <net code="7" name="BATTPOW">
+    <net code="9" name="BATTPOW">
       <node ref="C20" pin="1"/>
       <node ref="D1" pin="2" pinfunction="A"/>
-      <node ref="JP1" pin="2" pinfunction="2"/>
       <node ref="U3" pin="3" pinfunction="VBAT"/>
       <node ref="U6" pin="B3" pinfunction="SYS"/>
     </net>
-    <net code="8" name="BUTTON1">
+    <net code="10" name="BUTTON1">
       <node ref="IC1" pin="22" pinfunction="P0.06"/>
       <node ref="SW2" pin="2" pinfunction="2"/>
     </net>
-    <net code="9" name="BUTTON2">
+    <net code="11" name="BUTTON2">
       <node ref="IC1" pin="50" pinfunction="P1.02"/>
       <node ref="P1" pin="5" pinfunction="5"/>
     </net>
-    <net code="10" name="BUTTON3">
+    <net code="12" name="BUTTON3">
       <node ref="IC1" pin="26" pinfunction="P1.09"/>
       <node ref="SW4" pin="2" pinfunction="2"/>
     </net>
-    <net code="11" name="BUTTON4">
+    <net code="13" name="BUTTON4">
       <node ref="IC1" pin="48" pinfunction="P0.24"/>
       <node ref="P1" pin="7" pinfunction="7"/>
     </net>
-    <net code="12" name="BUTTON5">
+    <net code="14" name="BUTTON5">
       <node ref="IC1" pin="24" pinfunction="P0.08"/>
       <node ref="SW1" pin="2" pinfunction="2"/>
     </net>
-    <net code="13" name="BUZZER">
+    <net code="15" name="BUZZER">
       <node ref="IC1" pin="13" pinfunction="P0.28"/>
       <node ref="Q4" pin="1" pinfunction="G"/>
       <node ref="R15" pin="1"/>
     </net>
-    <net code="14" name="CHGNG">
+    <net code="16" name="CHGNG">
       <node ref="IC1" pin="52" pinfunction="P0.09/NFC1"/>
-      <node ref="R5" pin="1"/>
       <node ref="U3" pin="1" pinfunction="STAT"/>
     </net>
-    <net code="15" name="FLASHLIGHT">
+    <net code="17" name="FLASHLIGHT">
       <node ref="IC1" pin="49" pinfunction="P0.25"/>
       <node ref="P1" pin="3" pinfunction="3"/>
     </net>
-    <net code="16" name="FLASH_CS">
-      <node ref="IC1" pin="16" pinfunction="P0.27"/>
-      <node ref="U1" pin="1" pinfunction="~CS"/>
-    </net>
-    <net code="17" name="GND">
+    <net code="18" name="GND">
       <node ref="BT1" pin="2" pinfunction="-"/>
       <node ref="C1" pin="1"/>
       <node ref="C10" pin="2"/>
@@ -1355,8 +1246,7 @@
       <node ref="C20" pin="2"/>
       <node ref="C3" pin="2"/>
       <node ref="C4" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C6" pin="2"/>
+      <node ref="C5" pin="1"/>
       <node ref="C7" pin="2"/>
       <node ref="C8" pin="2"/>
       <node ref="C9" pin="2"/>
@@ -1373,6 +1263,7 @@
       <node ref="J2" pin="B1" pinfunction="GND"/>
       <node ref="J2" pin="B12" pinfunction="GND"/>
       <node ref="J2" pin="S1" pinfunction="SHIELD"/>
+      <node ref="J5" pin="2" pinfunction="Pin_2"/>
       <node ref="P1" pin="9" pinfunction="9"/>
       <node ref="Q3" pin="2" pinfunction="S"/>
       <node ref="Q4" pin="2" pinfunction="S"/>
@@ -1386,118 +1277,118 @@
       <node ref="SW4" pin="1" pinfunction="1"/>
       <node ref="SW_RESET1" pin="2" pinfunction="2"/>
       <node ref="TP1" pin="1" pinfunction="1"/>
-      <node ref="U1" pin="4" pinfunction="GND"/>
+      <node ref="U1" pin="1" pinfunction="GND"/>
+      <node ref="U1" pin="7" pinfunction="EP"/>
       <node ref="U2" pin="2" pinfunction="GND"/>
       <node ref="U3" pin="2" pinfunction="VSS"/>
-      <node ref="U5" pin="3" pinfunction="GND"/>
-      <node ref="U5" pin="4" pinfunction="SEL"/>
+      <node ref="U4" pin="1" pinfunction="SDO"/>
+      <node ref="U4" pin="8" pinfunction="GNDIO"/>
+      <node ref="U4" pin="9" pinfunction="GND"/>
       <node ref="U6" pin="C3" pinfunction="GND"/>
     </net>
-    <net code="18" name="LCD_CS">
+    <net code="19" name="LCD_CS">
       <node ref="IC1" pin="3" pinfunction="P1.10"/>
       <node ref="J1" pin="3" pinfunction="Pin_3"/>
     </net>
-    <net code="19" name="LCD_DISP">
+    <net code="20" name="LCD_DISP">
       <node ref="C9" pin="1"/>
+      <node ref="IC1" pin="4" pinfunction="P1.11"/>
       <node ref="J1" pin="5" pinfunction="Pin_5"/>
     </net>
-    <net code="20" name="Net-(C10-Pad1)">
+    <net code="21" name="Net-(C10-Pad1)">
       <node ref="C10" pin="1"/>
       <node ref="U6" pin="C2" pinfunction="REG"/>
     </net>
-    <net code="21" name="Net-(C5-Pad1)">
-      <node ref="C5" pin="1"/>
-      <node ref="D2" pin="1" pinfunction="K"/>
-      <node ref="IC2" pin="5" pinfunction="VCC"/>
+    <net code="22" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="U1" pin="4" pinfunction="CP+"/>
     </net>
-    <net code="22" name="Net-(IC1-Pad11)">
+    <net code="23" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="U1" pin="5" pinfunction="CP-"/>
+    </net>
+    <net code="24" name="Net-(IC1-Pad10)">
+      <node ref="IC1" pin="10" pinfunction="P0.29"/>
+    </net>
+    <net code="25" name="Net-(IC1-Pad11)">
       <node ref="IC1" pin="11" pinfunction="P0.02"/>
     </net>
-    <net code="23" name="Net-(IC1-Pad19)">
+    <net code="26" name="Net-(IC1-Pad12)">
+      <node ref="IC1" pin="12" pinfunction="P0.31"/>
+    </net>
+    <net code="27" name="Net-(IC1-Pad14)">
+      <node ref="IC1" pin="14" pinfunction="P0.30"/>
+    </net>
+    <net code="28" name="Net-(IC1-Pad16)">
+      <node ref="IC1" pin="16" pinfunction="P0.27"/>
+    </net>
+    <net code="29" name="Net-(IC1-Pad19)">
       <node ref="IC1" pin="19" pinfunction="P0.26"/>
     </net>
-    <net code="24" name="Net-(IC1-Pad20)">
+    <net code="30" name="Net-(IC1-Pad20)">
       <node ref="IC1" pin="20" pinfunction="P0.04"/>
     </net>
-    <net code="25" name="Net-(IC1-Pad23)">
-      <node ref="IC1" pin="23" pinfunction="P0.07"/>
-    </net>
-    <net code="26" name="Net-(IC1-Pad25)">
-      <node ref="IC1" pin="25" pinfunction="P1.08"/>
-    </net>
-    <net code="27" name="Net-(IC1-Pad27)">
+    <net code="31" name="Net-(IC1-Pad27)">
       <node ref="IC1" pin="27" pinfunction="P0.11"/>
     </net>
-    <net code="28" name="Net-(IC1-Pad29)">
+    <net code="32" name="Net-(IC1-Pad29)">
       <node ref="IC1" pin="29" pinfunction="P0.12"/>
     </net>
-    <net code="29" name="Net-(IC1-Pad31)">
+    <net code="33" name="Net-(IC1-Pad31)">
       <node ref="IC1" pin="31" pinfunction="DCCH"/>
     </net>
-    <net code="30" name="Net-(IC1-Pad34)">
+    <net code="34" name="Net-(IC1-Pad34)">
       <node ref="IC1" pin="34" pinfunction="D-"/>
       <node ref="R3" pin="1"/>
     </net>
-    <net code="31" name="Net-(IC1-Pad35)">
+    <net code="35" name="Net-(IC1-Pad35)">
       <node ref="IC1" pin="35" pinfunction="D+"/>
       <node ref="R4" pin="1"/>
     </net>
-    <net code="32" name="Net-(IC1-Pad36)">
+    <net code="36" name="Net-(IC1-Pad36)">
       <node ref="IC1" pin="36" pinfunction="P0.14"/>
     </net>
-    <net code="33" name="Net-(IC1-Pad37)">
+    <net code="37" name="Net-(IC1-Pad37)">
       <node ref="IC1" pin="37" pinfunction="P0.13"/>
     </net>
-    <net code="34" name="Net-(IC1-Pad38)">
+    <net code="38" name="Net-(IC1-Pad38)">
       <node ref="IC1" pin="38" pinfunction="P0.16"/>
     </net>
-    <net code="35" name="Net-(IC1-Pad39)">
+    <net code="39" name="Net-(IC1-Pad39)">
       <node ref="IC1" pin="39" pinfunction="P0.15"/>
     </net>
-    <net code="36" name="Net-(IC1-Pad4)">
-      <node ref="IC1" pin="4" pinfunction="P1.11"/>
-    </net>
-    <net code="37" name="Net-(IC1-Pad43)">
+    <net code="40" name="Net-(IC1-Pad43)">
       <node ref="IC1" pin="43" pinfunction="P0.21"/>
     </net>
-    <net code="38" name="Net-(IC1-Pad45)">
-      <node ref="IC1" pin="45" pinfunction="P0.23"/>
-    </net>
-    <net code="39" name="Net-(IC1-Pad47)">
+    <net code="41" name="Net-(IC1-Pad47)">
       <node ref="IC1" pin="47" pinfunction="P1.00"/>
     </net>
-    <net code="40" name="Net-(IC1-Pad5)">
+    <net code="42" name="Net-(IC1-Pad5)">
       <node ref="IC1" pin="5" pinfunction="P1.12"/>
     </net>
-    <net code="41" name="Net-(IC1-Pad56)">
+    <net code="43" name="Net-(IC1-Pad56)">
       <node ref="IC1" pin="56" pinfunction="P1.04"/>
     </net>
-    <net code="42" name="Net-(IC1-Pad57)">
+    <net code="44" name="Net-(IC1-Pad57)">
       <node ref="IC1" pin="57" pinfunction="P1.06"/>
     </net>
-    <net code="43" name="Net-(IC1-Pad58)">
+    <net code="45" name="Net-(IC1-Pad58)">
       <node ref="IC1" pin="58" pinfunction="P1.07"/>
     </net>
-    <net code="44" name="Net-(IC1-Pad59)">
+    <net code="46" name="Net-(IC1-Pad59)">
       <node ref="IC1" pin="59" pinfunction="P1.05"/>
     </net>
-    <net code="45" name="Net-(IC1-Pad6)">
+    <net code="47" name="Net-(IC1-Pad6)">
       <node ref="IC1" pin="6" pinfunction="P1.13"/>
     </net>
-    <net code="46" name="Net-(IC1-Pad60)">
+    <net code="48" name="Net-(IC1-Pad60)">
       <node ref="IC1" pin="60" pinfunction="P1.03"/>
     </net>
-    <net code="47" name="Net-(IC1-Pad61)">
+    <net code="49" name="Net-(IC1-Pad61)">
       <node ref="IC1" pin="61" pinfunction="P1.01"/>
     </net>
-    <net code="48" name="Net-(IC1-Pad7)">
-      <node ref="IC1" pin="7" pinfunction="P1.14"/>
-    </net>
-    <net code="49" name="Net-(IC1-Pad8)">
+    <net code="50" name="Net-(IC1-Pad8)">
       <node ref="IC1" pin="8" pinfunction="P1.15"/>
-    </net>
-    <net code="50" name="Net-(IC1-Pad9)">
-      <node ref="IC1" pin="9" pinfunction="P0.03"/>
     </net>
     <net code="51" name="Net-(J2-PadA5)">
       <node ref="J2" pin="A5" pinfunction="CC1"/>
@@ -1521,138 +1412,141 @@
       <node ref="J3" pin="2" pinfunction="Pin_2"/>
       <node ref="Q4" pin="3" pinfunction="D"/>
     </net>
-    <net code="57" name="Net-(J5-Pad1)">
-      <node ref="J5" pin="1" pinfunction="Pin_1"/>
-      <node ref="J5" pin="2" pinfunction="Pin_2"/>
+    <net code="57" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1" pinfunction="1"/>
+      <node ref="J4" pin="2" pinfunction="2"/>
       <node ref="R14" pin="2"/>
     </net>
-    <net code="58" name="Net-(J5-Pad3)">
-      <node ref="J5" pin="3" pinfunction="Pin_3"/>
-      <node ref="J5" pin="4" pinfunction="Pin_4"/>
+    <net code="58" name="Net-(J4-Pad3)">
+      <node ref="J4" pin="3" pinfunction="3"/>
+      <node ref="J4" pin="4" pinfunction="4"/>
       <node ref="Q3" pin="3" pinfunction="D"/>
     </net>
-    <net code="59" name="Net-(L1-Pad1)">
+    <net code="59" name="Net-(J4-PadS1)">
+      <node ref="J4" pin="S1" pinfunction="SHIELD"/>
+    </net>
+    <net code="60" name="Net-(J4-PadS2)">
+      <node ref="J4" pin="S2" pinfunction="SHIELD__1"/>
+    </net>
+    <net code="61" name="Net-(L1-Pad1)">
       <node ref="L1" pin="1" pinfunction="1"/>
       <node ref="U2" pin="5" pinfunction="SW"/>
     </net>
-    <net code="60" name="Net-(L2-Pad2)">
-      <node ref="L2" pin="2" pinfunction="2"/>
-      <node ref="U5" pin="2" pinfunction="LX"/>
-    </net>
-    <net code="61" name="Net-(P1-Pad10)">
+    <net code="62" name="Net-(P1-Pad10)">
       <node ref="P1" pin="10" pinfunction="10"/>
     </net>
-    <net code="62" name="Net-(P1-Pad4)">
+    <net code="63" name="Net-(P1-Pad4)">
       <node ref="P1" pin="4" pinfunction="4"/>
     </net>
-    <net code="63" name="Net-(P1-Pad6)">
+    <net code="64" name="Net-(P1-Pad6)">
       <node ref="P1" pin="6" pinfunction="6"/>
     </net>
-    <net code="64" name="Net-(P1-Pad8)">
+    <net code="65" name="Net-(P1-Pad8)">
       <node ref="P1" pin="8" pinfunction="8"/>
     </net>
-    <net code="65" name="Net-(R9-Pad1)">
+    <net code="66" name="Net-(R9-Pad1)">
       <node ref="R9" pin="1"/>
       <node ref="U3" pin="5" pinfunction="PROG"/>
     </net>
-    <net code="66" name="Net-(U6-PadA3)">
+    <net code="67" name="Net-(U6-PadA3)">
       <node ref="U6" pin="A3" pinfunction="NC"/>
     </net>
-    <net code="67" name="Net-(U6-PadB2)">
+    <net code="68" name="Net-(U6-PadB2)">
       <node ref="U6" pin="B2" pinfunction="~ALRT~"/>
     </net>
-    <net code="68" name="RST">
+    <net code="69" name="RST">
       <node ref="IC1" pin="40" pinfunction="P0.18/RESET"/>
       <node ref="R6" pin="2"/>
       <node ref="SW_RESET1" pin="1" pinfunction="1"/>
     </net>
-    <net code="69" name="RTCIRQ">
+    <net code="70" name="RTCIRQ">
       <node ref="IC1" pin="41" pinfunction="P0.17"/>
       <node ref="IC2" pin="6" pinfunction="~IRQ/OUT~"/>
     </net>
-    <net code="70" name="SCL">
+    <net code="71" name="SCL">
       <node ref="IC1" pin="46" pinfunction="P0.22"/>
       <node ref="IC2" pin="8" pinfunction="SCL"/>
+      <node ref="U4" pin="12" pinfunction="SCX"/>
       <node ref="U6" pin="B1" pinfunction="SCL"/>
     </net>
-    <net code="71" name="SDA">
+    <net code="72" name="SDA">
       <node ref="IC1" pin="44" pinfunction="P0.20"/>
       <node ref="IC2" pin="1" pinfunction="SDA"/>
+      <node ref="U4" pin="2" pinfunction="SDX"/>
       <node ref="U6" pin="C1" pinfunction="SDA"/>
     </net>
-    <net code="72" name="SPI_CLK">
-      <node ref="IC1" pin="10" pinfunction="P0.29"/>
+    <net code="73" name="SPI_CLK">
+      <node ref="IC1" pin="21" pinfunction="P0.05"/>
       <node ref="J1" pin="1" pinfunction="Pin_1"/>
-      <node ref="U1" pin="6" pinfunction="SCK"/>
     </net>
-    <net code="73" name="SPI_MISO">
-      <node ref="IC1" pin="14" pinfunction="P0.30"/>
-      <node ref="U1" pin="2" pinfunction="SO/IO1"/>
+    <net code="74" name="SPI_MISO">
+      <node ref="IC1" pin="25" pinfunction="P1.08"/>
     </net>
-    <net code="74" name="SPI_MOSI">
-      <node ref="IC1" pin="12" pinfunction="P0.31"/>
+    <net code="75" name="SPI_MOSI">
+      <node ref="IC1" pin="23" pinfunction="P0.07"/>
       <node ref="J1" pin="2" pinfunction="Pin_2"/>
-      <node ref="U1" pin="5" pinfunction="SI/IO0"/>
     </net>
-    <net code="75" name="SQW">
+    <net code="76" name="SQW">
       <node ref="IC1" pin="42" pinfunction="P0.19"/>
       <node ref="IC2" pin="2" pinfunction="SQW"/>
       <node ref="J1" pin="4" pinfunction="Pin_4"/>
     </net>
-    <net code="76" name="SWDCLK">
+    <net code="77" name="SWDCLK">
       <node ref="IC1" pin="53" pinfunction="SWDCLK"/>
       <node ref="TP2" pin="1" pinfunction="1"/>
     </net>
-    <net code="77" name="SWDIO">
+    <net code="78" name="SWDIO">
       <node ref="IC1" pin="51" pinfunction="SWDIO"/>
       <node ref="TP4" pin="1" pinfunction="1"/>
     </net>
-    <net code="78" name="USB_DN">
+    <net code="79" name="USB_DN">
       <node ref="J2" pin="A7" pinfunction="D-"/>
       <node ref="J2" pin="B7" pinfunction="D-"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1"/>
       <node ref="R3" pin="2"/>
     </net>
-    <net code="79" name="USB_DP">
+    <net code="80" name="USB_DP">
       <node ref="J2" pin="A6" pinfunction="D+"/>
       <node ref="J2" pin="B6" pinfunction="D+"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2"/>
       <node ref="R4" pin="2"/>
     </net>
-    <net code="80" name="VCC">
+    <net code="81" name="VCC">
       <node ref="C3" pin="1"/>
       <node ref="C7" pin="1"/>
-      <node ref="D2" pin="2" pinfunction="A"/>
       <node ref="IC1" pin="28" pinfunction="VDD"/>
       <node ref="IC1" pin="30" pinfunction="VDDH"/>
+      <node ref="IC2" pin="5" pinfunction="VCC"/>
       <node ref="L1" pin="2" pinfunction="2"/>
       <node ref="P1" pin="2" pinfunction="2"/>
       <node ref="R16" pin="1"/>
-      <node ref="R5" pin="2"/>
       <node ref="R6" pin="1"/>
       <node ref="TP3" pin="1" pinfunction="1"/>
-      <node ref="U1" pin="3" pinfunction="~WP~/IO2"/>
-      <node ref="U1" pin="7" pinfunction="~HOLD~/IO3"/>
-      <node ref="U1" pin="8" pinfunction="VCC"/>
       <node ref="U2" pin="4" pinfunction="FB"/>
+      <node ref="U4" pin="10" pinfunction="~CSB~"/>
+      <node ref="U4" pin="3" pinfunction="VDDIO"/>
+      <node ref="U4" pin="7" pinfunction="VDD"/>
     </net>
-    <net code="81" name="VIN">
+    <net code="82" name="VIN">
       <node ref="C4" pin="1"/>
-      <node ref="C6" pin="1"/>
+      <node ref="C5" pin="2"/>
       <node ref="D1" pin="3" pinfunction="K"/>
-      <node ref="L2" pin="1" pinfunction="1"/>
       <node ref="P1" pin="1" pinfunction="1"/>
       <node ref="R14" pin="1"/>
+      <node ref="TP5" pin="1" pinfunction="1"/>
+      <node ref="U1" pin="2" pinfunction="VIN"/>
+      <node ref="U1" pin="6" pinfunction="ENA"/>
       <node ref="U2" pin="1" pinfunction="VIN"/>
       <node ref="U2" pin="3" pinfunction="EN"/>
-      <node ref="U5" pin="5" pinfunction="IN"/>
-      <node ref="U5" pin="6" pinfunction="EN"/>
     </net>
-    <net code="82" name="VUSB">
+    <net code="83" name="VUSB">
       <node ref="D1" pin="1" pinfunction="A"/>
       <node ref="IC1" pin="32" pinfunction="VBUS"/>
       <node ref="J2" pin="A4" pinfunction="VBUS"/>
       <node ref="J2" pin="A9" pinfunction="VBUS"/>
       <node ref="J2" pin="B4" pinfunction="VBUS"/>
       <node ref="J2" pin="B9" pinfunction="VBUS"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1"/>
       <node ref="U3" pin="4" pinfunction="VDD"/>
     </net>
   </nets>
