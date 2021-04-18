@@ -1,4 +1,4 @@
-18311660062866419
+18319727351055419
 113990582
 113990582
 113990582-2
@@ -25915,92 +25915,92 @@ phoenix_contact connector MSTB_01x16_GF_5.00mm_MH
 16
 Connector_Pin
 Pin_D0.7mm_L6.5mm_W1.8mm_FlatFork
-solder Pin_{brace}brace}space}with flat fork, hole diameter 0.7mm, length 6.5mm, width 1.8mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat fork, hole diameter 0.7mm, length 6.5mm, width 1.8mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork
-solder Pin_{brace}brace}space}with flat fork, hole diameter 0.9mm, length 10.0mm, width 2.4mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat fork, hole diameter 0.9mm, length 10.0mm, width 2.4mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.0mm_L10.0mm
-solder Pin_{brace}brace}space}diameter 1.0mm, hole diameter 1.0mm (press fit), length 10.0mm
-solder Pin_{brace}brace}space}press fit
+solder Pin_ diameter 1.0mm, hole diameter 1.0mm (press fit), length 10.0mm
+solder Pin_ press fit
 0
 1
 1
 Connector_Pin
 Pin_D1.0mm_L10.0mm_LooseFit
-solder Pin_{brace}brace}space}diameter 1.0mm, hole diameter 1.2mm (loose fit), length 10.0mm
-solder Pin_{brace}brace}space}loose fit
+solder Pin_ diameter 1.0mm, hole diameter 1.2mm (loose fit), length 10.0mm
+solder Pin_ loose fit
 0
 1
 1
 Connector_Pin
 Pin_D1.1mm_L8.5mm_W2.5mm_FlatFork
-solder Pin_{brace}brace}space}with flat fork, hole diameter 1.1mm, length 8.5mm, width 2.5mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat fork, hole diameter 1.1mm, length 8.5mm, width 2.5mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.1mm_L10.2mm_W3.5mm_Flat
-solder Pin_{brace}brace}space}with flat with hole, hole diameter 1.1mm, length 10.2mm, width 3.5mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat with hole, hole diameter 1.1mm, length 10.2mm, width 3.5mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.2mm_L10.2mm_W2.9mm_FlatFork
-solder Pin_{brace}brace}space}with flat with fork, hole diameter 1.2mm, length 11.3mm, width 3.0mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat with fork, hole diameter 1.2mm, length 11.3mm, width 3.0mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.2mm_L11.3mm_W3.0mm_Flat
-solder Pin_{brace}brace}space}with flat with hole, hole diameter 1.2mm, length 11.3mm, width 3.0mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat with hole, hole diameter 1.2mm, length 11.3mm, width 3.0mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.3mm_L10.0mm_W3.5mm_Flat
-solder Pin_{brace}brace}space}with flat with hole, hole diameter 1.3mm, length 10.0mm, width 3.5mm, e.g. Ettinger 13.13.865, https://katalog.ettinger.de/#p=434
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat with hole, hole diameter 1.3mm, length 10.0mm, width 3.5mm, e.g. Ettinger 13.13.865, https://katalog.ettinger.de/#p=434
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.3mm_L11.0mm
-solder Pin_{brace}brace}space}diameter 1.3mm, hole diameter 1.3mm, length 11.0mm
-solder Pin_{brace}brace}space}pressfit
+solder Pin_ diameter 1.3mm, hole diameter 1.3mm, length 11.0mm
+solder Pin_ pressfit
 0
 1
 1
 Connector_Pin
 Pin_D1.3mm_L11.0mm_LooseFit
-solder Pin_{brace}brace}space}diameter 1.3mm, hole diameter 1.5mm (loose fit), length 11.0mm
-solder Pin_{brace}brace}space}loose fit
+solder Pin_ diameter 1.3mm, hole diameter 1.5mm (loose fit), length 11.0mm
+solder Pin_ loose fit
 0
 1
 1
 Connector_Pin
 Pin_D1.3mm_L11.3mm_W2.8mm_Flat
-solder Pin_{brace}brace}space}with flat with hole, hole diameter 1.3mm, length 11.3mm, width 2.8mm
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat with hole, hole diameter 1.3mm, length 11.3mm, width 2.8mm
+solder Pin_ with flat fork
 0
 1
 1
 Connector_Pin
 Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork
-solder Pin_{brace}brace}space}with flat with fork, hole diameter 1.4mm, length 8.5mm, width 2.8mm, e.g. Ettinger 13.13.890, https://katalog.ettinger.de/#p=434
-solder Pin_{brace}brace}space}with flat fork
+solder Pin_ with flat with fork, hole diameter 1.4mm, length 8.5mm, width 2.8mm, e.g. Ettinger 13.13.890, https://katalog.ettinger.de/#p=434
+solder Pin_ with flat fork
 0
 1
 1
@@ -67663,7 +67663,7 @@ X2SON
 5
 Package_SON
 USON-10_2.5x1.0mm_P0.5mm
-USON-10 2.5x1.0mm_{brace}brace}space}Pitch 0.5mm http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf
+USON-10 2.5x1.0mm_ Pitch 0.5mm http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf
 USON-10 2.5x1.0mm Pitch 0.5mm
 0
 10
@@ -80164,6 +80164,13 @@ Integrated Circuit
 61
 61
 libs
+DX07WH24JA3R1200
+
+
+0
+30
+30
+libs
 E-Switch-TL3330AF130QG-MFG
 
 
@@ -80199,6 +80206,20 @@ MOLEX_503480-0400
 6
 6
 libs
+MOLEX_503480-0600
+
+
+0
+8
+8
+libs
+MOLEX_5034800800
+
+
+0
+10
+10
+libs
 PANASONIC_AXT510124
 
 
@@ -80212,6 +80233,20 @@ PANASONIC_AXT610124
 0
 14
 14
+libs
+SOIC127P600X175-8N
+SO8
+Integrated Circuit
+0
+8
+8
+libs
+SON50P200X200X80-8N
+
+
+0
+8
+8
 libs
 SON50P300X200X60-9N
 

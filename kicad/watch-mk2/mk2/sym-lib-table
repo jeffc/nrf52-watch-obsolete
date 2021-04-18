@@ -10,4 +10,8 @@
   (lib (name "BMA400")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/BMA400.lib")(options "")(descr ""))
   (lib (name "molex_503480-0400")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/molex_503480-0400.lib")(options "")(descr ""))
   (lib (name "reg71050")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/reg71050.lib")(options "")(descr ""))
+  (lib (name "molex_503480-0600")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/molex_503480-0600.lib")(options "")(descr ""))
+  (lib (name "5034800800")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/5034800800.lib")(options "")(descr ""))
+  (lib (name "DX07WH24JA3")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/DX07WH24JA3.lib")(options "")(descr ""))
+  (lib (name "2305018-2")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/te-waterproof-usb-2305018-2/2305018-2.lib")(options "")(descr ""))
 )

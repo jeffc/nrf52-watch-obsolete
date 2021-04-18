@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0254,
+          "height": 0.9144,
+          "width": 2.1082
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -384,9 +384,7 @@
           "BATTIRQ",
           "BATTPOW",
           "BUTTON1",
-          "BUTTON2",
           "BUTTON3",
-          "BUTTON4",
           "BUTTON5",
           "BUZZER",
           "CHGNG",
@@ -406,9 +404,7 @@
           "USB_DN",
           "USB_DP",
           "VIN",
-          "VUSB",
-          "XL1",
-          "XL2"
+          "VUSB"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -466,7 +462,7 @@
   },
   "sheets": [
     [
-      "d52d2a8e-540f-4eb1-880e-f6362a9182d6",
+      "93dcb932-c983-43cc-a67d-60ae79e156d9",
       ""
     ]
   ],

@@ -3,4 +3,5 @@
   (lib (name "libs")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/")(options "")(descr ""))
   (lib (name "max17262")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/max17262.pretty")(options "")(descr ""))
   (lib (name "max17220")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/max17220.pretty")(options "")(descr ""))
+  (lib (name "te-waterproof-usb-2305018-2")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/te-waterproof-usb-2305018-2")(options "")(descr ""))
 )
