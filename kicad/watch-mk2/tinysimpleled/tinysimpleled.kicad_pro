@@ -10,8 +10,8 @@
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
         "courtyard_line_width": 0.049999999999999996,
-        "dimension_precision": 1,
-        "dimension_units": 0,
+        "dimension_precision": 4,
+        "dimension_units": 3,
         "dimensions": {
           "arrow_length": 1270000,
           "extension_offset": 500000,
@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0254,
-          "height": 0.9144,
-          "width": 2.1082
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -50,9 +50,9 @@
       },
       "diff_pair_dimensions": [
         {
-          "gap": 0.25,
-          "via_gap": 0.25,
-          "width": 0.2
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
         }
       ],
       "drc_exclusions": [],
@@ -102,16 +102,15 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
-        "min_copper_edge_clearance": 0.01,
+        "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.0,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.09999999999999999,
+        "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_annulus": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
@@ -119,18 +118,16 @@
         "solder_paste_margin_ratio": -0.0
       },
       "track_widths": [
-        0.13,
-        0.1,
-        0.13
+        0.0
       ],
       "via_dimensions": [
         {
-          "diameter": 0.5,
-          "drill": 0.3
+          "diameter": 0.0,
+          "drill": 0.0
         }
       ],
       "zones_allow_external_fillets": false,
-      "zones_use_no_outline": false
+      "zones_use_no_outline": true
     },
     "layer_presets": []
   },
@@ -315,7 +312,6 @@
     ],
     "rule_severities": {
       "bus_definition_conflict": "error",
-      "bus_entry_needed": "error",
       "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
@@ -324,19 +320,19 @@
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
       "extra_units": "error",
-      "global_label_dangling": "ignore",
+      "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
-      "multiple_net_names": "error",
-      "net_not_bus_member": "error",
-      "no_connect_connected": "error",
-      "no_connect_dangling": "error",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
+      "no_connect_connected": "warning",
+      "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "ignore",
-      "pin_to_pin": "ignore",
+      "pin_not_driven": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
-      "similar_labels": "error",
+      "similar_labels": "warning",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -348,7 +344,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mk2.kicad_pro",
+    "filename": "tinysimpleled.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -365,58 +361,14 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.13,
-        "via_diameter": 0.5,
-        "via_drill": 0.3,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 6.0,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "smol",
-        "nets": [
-          "BACKLIGHT",
-          "BATTIRQ",
-          "BATTPOW",
-          "BUTTON1",
-          "BUTTON3",
-          "BUTTON5",
-          "BUZZER",
-          "CHGNG",
-          "FLASHLIGHT",
-          "LCD_CS",
-          "LCD_DISP",
-          "RST",
-          "RTCIRQ",
-          "SCL",
-          "SDA",
-          "SPI_CLK",
-          "SPI_MISO",
-          "SPI_MOSI",
-          "SQW",
-          "SWDCLK",
-          "SWDIO",
-          "USB_DN",
-          "USB_DP",
-          "VIN",
-          "VUSB"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.13,
-        "via_diameter": 0.5,
-        "via_drill": 0.3,
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6.0
       }
     ],
     "meta": {
-      "version": 2
+      "version": 0
     },
     "net_colors": null
   },
@@ -426,14 +378,12 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "../../../../../../../mnt/tron/Jeff/Downloads/mk2.step",
-      "vmrl": "../../../../../../../mnt/tron/Jeff/Downloads/mk2-2.wrl",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
     "drawing": {
       "default_bus_thickness": 12.0,
       "default_junction_size": 40.0,
@@ -441,33 +391,22 @@
       "default_text_size": 50.0,
       "default_wire_thickness": 6.0,
       "field_names": [],
-      "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
-      "label_size_ratio": 0.3,
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.3
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
     "meta": {
-      "version": 1
+      "version": 0
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "fix_passive_vals": false,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
-    "plot_directory": "/tmp/",
+    "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -475,7 +414,7 @@
   },
   "sheets": [
     [
-      "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
+      "94152f44-bcbc-487b-bf7b-7279db3a8840",
       ""
     ]
   ],

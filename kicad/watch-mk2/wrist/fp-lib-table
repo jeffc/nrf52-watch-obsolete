@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "xm-l2")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/watch-mk2/flex/flex/xm-l2.pretty")(options "")(descr ""))
+  (lib (name "sx9500")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs/sx9500")(options "")(descr ""))
+  (lib (name "libs")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs")(options "")(descr ""))
+)

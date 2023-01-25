@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCA9530D,118
+D NXP - PCA9530D,118 - LED DIMMER, 2BIT, I2C/SMBUS, SOIC-8
+K
+F http://www.nxp.com/docs/en/data-sheet/PCA9530.pdf
+$ENDCMP
+#
+#End Doc Library

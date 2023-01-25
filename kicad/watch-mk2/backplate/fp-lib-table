@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "backplate")(type "KiCad")(uri "${KIPRJMOD}/backplate.pretty")(options "")(descr ""))
+  (lib (name "lib")(type "KiCad")(uri "/home/jeff/code/nrf52-watch/kicad/libs")(options "")(descr ""))
+)

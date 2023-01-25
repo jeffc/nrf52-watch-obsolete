@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "dock")(type "KiCad")(uri "${KIPRJMOD}/dock.pretty")(options "")(descr ""))
+)

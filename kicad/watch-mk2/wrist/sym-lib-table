@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name "molex_503480-0600")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/molex_503480-0600.lib")(options "")(descr ""))
+  (lib (name "SX9500IULTRT")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/sx9500/SX9500IULTRT.lib")(options "")(descr ""))
+  (lib (name "PCA9530D_118")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/PCA9530D_118.lib")(options "")(descr ""))
+  (lib (name "MAX14595ETAT")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/MAX14595ETAT.lib")(options "")(descr ""))
+  (lib (name "5034800800")(type "Legacy")(uri "/home/jeff/code/nrf52-watch/kicad/libs/5034800800.lib")(options "")(descr ""))
+)

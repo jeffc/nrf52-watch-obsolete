@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SX9500IULTRT
+D Capacitive Touch Sensors 4-CH PROX SEN W/ I2C
+K
+F https://www.semtech.com/uploads/documents/sx9500.pdf
+$ENDCMP
+#
+#End Doc Library
